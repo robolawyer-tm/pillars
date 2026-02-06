@@ -8,6 +8,7 @@ These are the **core concepts** that inform how star-bridge and secret-server (a
 
 - **[DESIGN_PHILOSOPHY.md](DESIGN_PHILOSOPHY.md)** — How process and structure interrelate; the case for dynamic notation
 - **[NOTATION_VISION.md](NOTATION_VISION.md)** — Proposal for accessible, visual representation of installation/process flows
+- **[MESH_TOPOLOGY_VISION.md](MESH_TOPOLOGY_VISION.md)** — Phone-to-phone bridging; peer discovery and SSH mesh networking
 - More to come...
 
 ## Purpose
