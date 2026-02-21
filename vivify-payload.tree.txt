@@ -1,0 +1,39 @@
+Payload (always JSON for consistency + recognizability)
+├── UPDATE / CREATION
+│   ├── Input
+│   │   ├── Graphical UI (vivify.client)
+│   │   └── Curses CLI (vivify.client)
+│   ├── Autovivify
+│   │   └── Build un‑schema'd JSON (hash of hashes)
+│   ├── Secrecy
+│   │   └── Encrypt secrets
+│   ├── Freeze
+│   │   └── Serialize payload → prepare for IP send
+│   └── Server
+│       ├── Strip first two layers (name, app‑name/topic)
+│       ├── Remove large binary chunks
+│       └── Store remainder
+│           ├── JSON file
+│           └── Blob (binary large object)
+│               ├── Must have meaningful text name (metadata)
+│               └── Stored unencrypted for admin ease
+│                   └── Secrets remain client‑encrypted
+│                   └── Same password usable for casual access
+│
+└── RETRIEVAL
+    ├── Input
+    │   ├── Graphical UI (vivify.client)
+    │   └── Curses CLI (vivify.client)
+    ├── Payload creation
+    │   ├── Input name (db top layer)
+    │   ├── App/topic name
+    │   ├── Next layer + desired value
+    │   ├── db‑user secret + app‑name
+    │   └── Access JSON file
+    │       └── Traverse depth (Perl‑like hash of hashes)
+    ├── Return
+    │   ├── Desired value (encrypted payload)
+    │   └── If structure named → whole or subset returned
+    └── Client
+        └── Reverse creation process
+            └── Print data
