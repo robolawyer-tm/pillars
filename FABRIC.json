@@ -1,0 +1,56 @@
+{
+   "FABRIC (always JSON for consistency + recognizability)" : {},
+   "RETRIEVAL" : {
+      "Client" : {
+         "Reverse creation process" : {
+            "Print data" : {}
+         }
+      },
+      "Input" : {
+         "Curses CLI (vivify.client)" : {},
+         "Graphical UI (vivify.client)" : {}
+      },
+      "Payload creation" : {
+         "Access JSON file" : {
+            "Traverse depth (Perl‑like hash of hashes)" : {}
+         },
+         "App/topic name" : {},
+         "Input name (db top layer)" : {},
+         "Next layer + desired value" : {},
+         "db‑user secret + app‑name" : {}
+      },
+      "Return" : {
+         "Desired value (encrypted payload)" : {},
+         "If structure named → whole or subset returned" : {}
+      }
+   },
+   "UPDATE / CREATION" : {
+      "Autovivify" : {
+         "Build un‑schema'd JSON (hash of hashes)" : {}
+      },
+      "Freeze" : {
+         "Serialize payload → prepare for IP send" : {}
+      },
+      "Input" : {
+         "Curses CLI (vivify.client)" : {},
+         "Graphical UI (vivify.client)" : {}
+      },
+      "Secrecy" : {
+         "Encrypt secrets" : {}
+      },
+      "Server" : {
+         "Remove large binary chunks" : {},
+         "Store remainder" : {
+            "Blob (binary large object)" : {
+               "Must have meaningful text name (metadata)" : {},
+               "Stored unencrypted for admin ease" : {
+                  "Same password usable for casual access" : {},
+                  "Secrets remain client‑encrypted" : {}
+               }
+            },
+            "JSON file" : {}
+         },
+         "Strip first two layers (name, app‑name/topic)" : {}
+      }
+   }
+}

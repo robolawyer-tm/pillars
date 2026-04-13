@@ -1,4 +1,4 @@
-Payload (always JSON for consistency + recognizability)
+FABRIC (always JSON for consistency + recognizability)
 ├── UPDATE / CREATION
 │   ├── Input
 │   │   ├── Graphical UI (vivify.client)

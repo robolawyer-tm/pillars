@@ -1,0 +1,37 @@
+
+
+FABRIC (software / hardware methods as symbolic guidance)
+* vivify - create vivified (perl equiv of hashes) objects in json (much intelligence involved here)
+* payload - create payload object to send to server device
+* secrecy - encrypt for payload and also secrets
+* freeze  - serialize payload object to send
+* server - strip first two (or three) layers to create directories, recreate json remove blobs and give links 
+
+FLOW (per process synbolic guidance through FABRIC that needs evolved to show difference between FABRIC and FLOW)
+* Secret-Server storage flow 
+ secret creation (vivify and secrecy) 
+ -> payload (send includes freeze) 
+ -> IP 
+ -> payload (receive)
+ -> server (formats and stores data)
+
+CODE STYLE (includes usage standards)
+  Shell (as much shell as possible at the high level)
+      Attempt to keep process as shell commands to make processes visible
+      Written like py -I had (but lost) a shell script this way
+  Python (also typescript awareness wrt 
+      Executables and Libraries (py scripts easily wrapped into shell commands) 
+      Shell wrapped py code using pipx  
+  
+DOCUMENT STYLE
+  * Major defined (top-level) topics with categorized sub-topics with
+  * Statements followed by
+  * Bulleted support statements with referential links 
+ 
+SEMANTIC <=> DIGITAL (relationship)
+  * evolve llms to use (what is described as) intuition to
+  * enter baseline-anchored conflict data to create ways to 
+     * determine baselines in diverging-only data
+  * evolve the process to create tools (yet unimagined, or unintuitioned)
+
+
