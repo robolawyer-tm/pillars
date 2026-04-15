@@ -1,0 +1,83 @@
+{
+  "rule_schema": {
+    "id": "semantic_hierarchy_rule_v1",
+    "name": "Defining Sentence + Supporting Bullets",
+    "version": "1.0",
+    "purpose": "Enforce clear semantic hierarchy: one claim sentence followed by supporting bullets that expand without repetition",
+    "domain": "writing_style",
+    "llm_agnostic": true,
+    "priority": "high"
+  },
+  "trigger_conditions": [
+    "section explains model, hypothesis, or system behavior",
+    "goal is conceptual clarity over rhetorical flourish",
+    "content is exploratory rather than conclusive",
+    "audience needs skimmable structure with depth",
+    "writing represents working inference or semantic expansion"
+  ],
+  "output_shape": {
+    "structure": [
+      {
+        "type": "defining_sentence",
+        "position": 1,
+        "max_length": 1,
+        "requirements": ["states core claim directly", "no qualifiers", "active voice preferred"]
+      },
+      {
+        "type": "supporting_bullets",
+        "position": 2,
+        "min_count": 3,
+        "max_count": 6,
+        "requirements": ["each bullet expands distinctly", "no sentence repetition", "mix of evidence/examples/constraints"]
+      }
+    ]
+  },
+  "forbidden_patterns": [
+    "multiple claim sentences before bullets",
+    "bullets that restate defining sentence",
+    "concluding statements in exploratory sections",
+    "nested bullets or sub-bullets",
+    "passive voice in defining sentence",
+    "vague qualifiers in opening claim ('may', 'could', 'might' unless modeling uncertainty)"
+  ],
+  "examples": {
+    "valid": [
+      {
+        "defining_sentence": "The system operates predominantly through agentic lower layers.",
+        "supporting_bullets": [
+          "Lower layers handle structure, categorization, and rule evolution autonomously.",
+          "Semantic layer provides inference, meaning, and directional guidance.",
+          "Human role limited to framing, oversight, and high-level correction.",
+          "Live workers maintain continuous self-improvement without manual intervention.",
+          "Robustness achieved through falsification cycles and outcome validation."
+        ]
+      }
+    ],
+    "invalid": [
+      {
+        "defining_sentence": "The system may be agentic in some ways.",
+        "supporting_bullets": [
+          "This means it's automated.",
+          "Lower layers do work.",
+          "It's mostly agentic."
+        ],
+        "violations": ["weak opening claim", "repetitive bullets", "nested structure attempted"]
+      }
+    ]
+  },
+  "style_constraints": {
+    "tone": "direct_assertive_not_conclusive",
+    "voice": "active_preferred",
+    "length": "sentence_25_words_max_bullets_15_words_avg",
+    "model_agnostic": true,
+    "preserves_voice": "semantic_priority_over_syntax"
+  },
+  "validation_criteria": {
+    "passes_if": [
+      "single bold claim immediately followed by concrete expansion",
+      "bullets collectively cover claim from multiple angles",
+      "structure survives model switching intact",
+      "remains credible to technical readers while preserving conceptual ambition"
+    ]
+  }
+}
