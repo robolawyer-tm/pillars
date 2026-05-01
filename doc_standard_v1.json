@@ -26,8 +26,8 @@
       {
         "type": "supporting_bullets",
         "position": 2,
-        "min_count": 3,
-        "max_count": 6,
+        "min_count": 1,
+        "max_count": 25,
         "requirements": ["each bullet expands distinctly", "no sentence repetition", "mix of evidence/examples/constraints"]
       }
     ]
@@ -81,3 +81,4 @@
     ]
   }
 }
+# llm: claude-sonnet-4-6 | 2026-04-27 | repos/pillars/doc_standard_v1.json | updated supporting_bullets max_count from 6 to 25, removed min_count

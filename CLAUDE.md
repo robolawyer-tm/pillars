@@ -90,7 +90,7 @@ raw inference text
 
 ## Documentation standard
 
-All documentation follows a single defining sentence followed by 3–6 supporting bullets that expand without repetition. Full schema: `pillars/doc_standard_v1.json`
+All documentation follows a single defining sentence followed by up to 25 supporting bullets that expand without repetition. Full schema: `pillars/doc_standard_v1.json`
 
 - Defining sentence: one direct claim, active voice, 25 words max, no vague qualifiers
 - Bullets: each expands a distinct angle — evidence, example, or constraint — 15 words avg
@@ -149,3 +149,4 @@ Every LLM-edited file gets a footer line recording the model, date, path, and ch
 <!-- llm: claude-sonnet-4-6 | 2026-04-13 | repos/pillars/CLAUDE.md | added documentation standard, LLM signing standard (in-file footer approach) -->
 <!-- llm: claude-sonnet-4-6 | 2026-04-14 | repos/pillars/CLAUDE.md | updated code style with 3 shell templates, added non-removal directive -->
 <!-- llm: claude-sonnet-4-6 | 2026-04-14 | repos/pillars/CLAUDE.md | added naming convention, two Python standards (app-level vs housekeeping/pipx) -->
+<!-- llm: claude-sonnet-4-6 | 2026-04-27 | repos/pillars/CLAUDE.md | updated documentation standard bullet count from 3-6 to up to 25 -->
