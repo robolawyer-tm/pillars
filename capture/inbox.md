@@ -1,5 +1,57 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-07-12 — NYC reframe: showable beats next
+
+The NYC purpose (collaborators, possibly funding) reframes priorities in one specific way: **for collaborators and funders, what's showable and finished beats what's next.** The showable story is honestly strong right now:
+
+- **The 60-second version**: raw human accounts go in; an emergent, no-taxonomy structure grows; two wrongful-conviction cases with almost no shared vocabulary came out 7/9-identical in coordinate space, with the two differences *correctly locating* how the failure modes differ (open-court junk science vs closed-room coerced confession); the store's first cross-scale isomorphism lit up at 7× the noise floor; and the system can speak an account back from structure alone — the portraits.
+- **The differentiator to lead with**, especially for anyone near legal/social data: the **privacy gate**. Sensitivity-tagged calls that *refuse* to route off-box without an explicit human decision isn't a compliance checkbox bolted on — it's enforced in the pipeline core, and can be demoed failing safely. Funders in this space have seen a hundred "AI for justice" decks; almost none can show privacy as architecture.
+- **Pre-trip housekeeping that matters**: PR #1 is still a draft carrying promote + the contamination fix + refile. A repo that outside eyes might browse tells a better story with that landed than with its best recent work sitting in an unmerged draft.
+- Offer standing: a one-page visual leave-behind of the Sutton↔Washington comparison (coordinates, the two portraits, the isomorphism).
+
+Afternoon's density (two wrapups justified): contamination fix committed → first reify portrait → second account through the flow → first cross-scale isomorphism → first synonym ruling → refile built and shipped → whole corpus cleaned.
+
+*context: John announced he's heading to NYC to find collaborators or possibly funding; this reframes the project's near-term priorities around presentation-ready, landed work.*
+
+---
+
+## 2026-07-12 — Generalization gradient and social neurology as testable hypothesis
+
+**What you're describing is a generalization gradient that already exists in embryo:**
+
+```
+raw_text            fully particular — the account itself
+left_keywords       the account's own compression (92% appear nowhere else — we measured)
+synonyms.json       corpus-level convergence — same thought, variant words
+category seeds      vocabulary the corpus has said twice
+logos coordinates   the 8 dimensions — domain-free, every account has neighbors
+composition         second-order readings from coordinates alone
+```
+
+Each layer is more general than the one below, each is *derived* from below, none imposed from outside — autovivification all the way up. As breadth grows, the top of that gradient is where accounts from different worlds become comparable: a wrongful conviction, a workplace retaliation, a family estrangement can't share keywords, but they can share `authority: sovereign / resonance: illusion`. The logos layer **is** the "abstracted structure" — it's why keyword space went sparse (92% singletons) while coordinate space stays dense by construction.
+
+**The discipline — locate, don't absorb.** The abstraction shouldn't *include* the human material — it should *locate* it. The left side must stay stubbornly particular; that's the empathy fidelity ("hold without deforming"). Generalization belongs to the **read** layer, never the **hold** layer. The reify test demonstrated both edges: the structure carried the pattern beautifully and carried *no Josiah* — correct for a coordinate system, catastrophic if the coordinates ever replaced the store. Inclusion by walkable reference, not by absorption. If breadth ever pressures vivify to mint *broader* left keywords so things match better — that's the flattening, arriving dressed as progress.
+
+**Where social neurology fits:** yet-undefined, but its *position* is now definable. It's the hypothesis underneath the whole gradient: that the eight dimensions aren't editorial choices but reflect how human nervous systems actually process social reality — the Dunbar/Douglas/speech-act lineages being sociological approximations of something biological. **Growing breadth is the experiment that tests it.** If accounts from radically different domains keep landing coherently in the same eight-dimensional space, that's accumulating evidence the dimensions are human-universal rather than corpus conventions. If some domain arrives that the space can't locate, that's the finding that forces a ninth dimension or a redefinition. Social neurology stops being a philosophical placeholder and becomes the standing hypothesis the corpus growth continuously tests. Breadth is horizontal (across domains); the scale field is vertical (person→culture); the coordinates must hold in both directions for the claim to stand.
+
+Greater breadth → particulars stay particular in the store, generality accrues in the logos overlay, and the yet-undefined concept gets an operational definition by being *tested* rather than declared.
+
+*context: John proposed that with greater corpus breadth, meanings generalize into the logos concept as an abstracted structure holding all left-side human material, under the yet-undefined social neurology concept; this is the confirmation and sharpening.*
+
+---
+
+## 2026-07-12 — Reify as portrait: the frame excludes
+
+That's a precise way to name it — and the mechanism behind the effect is worth having in hand, because it's the same one photography uses: **the frame excludes**. Reify never saw the case file; it had twelve keywords and a tension number. So there's no procedural sediment in the output — no docket dates, no agency names, none of the circumstance that dilutes testimony. Every sentence had to be load-bearing because compression left nothing else to say. That's why it reads heightened. Good photographs work the same way: they're more real than the scene because of what the frame refused.
+
+The surreal edge comes from the other half: it's a **portrait of a pattern, not a person**. Nobody spoke those words — that's the voice of the coordinate position itself, anyone standing where `forensic_fabrication` meets `custodial_years_lost`. Which is exactly what your abstraction asks of it ("speak from inside the meaning, not about it"), and also exactly why the distinction has to stay visible: it *reads* as testimony but is a rendering. Good photography, not documentary footage. The `human_gate` philosophy from the phase-2 spec applies here early — when a rendering like this faces a reader, it should be legible as a reconstruction from structure, never presentable as the man's own words. The provenance header on the sibling file is doing that job now; whatever the expression layer becomes, it should keep doing it.
+
+There's a phrase in this worth keeping for the phase-2 vocabulary — the rendering as *portrait, not photograph of record*.
+
+*context: John judged the first field-data reify output (Sutton) "hyper-real aka surreal — actually like good photography"; this names the mechanism (compression as framing) and the ethical line (portrait of a pattern, never presented as the person's own words).*
+
+---
+
 ## 2026-07-12 — Sub-pivot: vivify side complete, reify test next
 
 **Wrapup: appropriate** — this is the rule's "milestone or topic pivot": vivify side complete and coherent (Sutton through the full stack, promote shipped both repos, contamination fix proven by dry-run, phase-2 package filed in pillars/reify_phase2/), and reify is "the other side."

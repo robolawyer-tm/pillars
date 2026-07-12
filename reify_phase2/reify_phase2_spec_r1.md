@@ -177,12 +177,14 @@ Failure handling is the integrity test of the whole phase: an `unresolved` vecto
 ## 7. Build Order (⟲ revised for what already exists)
 
 1. **Scale unification + backfill** — adopt the existing structural vocabulary; run structural_operator over untagged corpus; `null` where unconfident. (Mostly an operator run, not new code.)
-2. **`res_*.json` container** + `unresolved/` path + promotion wiring (reuses `promote.py`).
-3. **Intervention ontology** — `config/interventions.json`, typed, versioned.
-4. **`precedent_operator.py`** — extend `cross_scale.py`: same-scale matching first, cross-scale analogy channel second. Plus `tests/test_membrane.py` (import wall).
-5. **Prospective rendering** JSON contract, then visual field on top.
-6. Loop closure: outcome capture → vector promotion → index rebuild.
+2. **⟲ `refile.py` pass** — pipeline plumbing both phases depend on, twice-observed gap (2026-07-12): `promote.py` only moves *out of* `unclustered/`; nothing re-files an already-filed inference whose `category_paths` change afterward. Observed causes: a synonym merge re-normalizes keywords and shifts `paths[0]` (the delayed_vindication→delayed_justice merge left Washington at a retired address until moved by hand); a clean re-categorize empties the paths of previously-filed accounts (contamination-fix aftermath). Spec: move a filed inference **and its sibling files** (`reify_*.md`) to current `paths[0]`, retire emptied directories, demote to `unclustered/` when paths go empty. Complement of promote: promote = unclustered→filed; refile = filed→refiled/demoted. Idempotent, dry-run, same shape as promote.py.
+3. **`res_*.json` container** + `unresolved/` path + promotion wiring (reuses `promote.py`).
+4. **Intervention ontology** — `config/interventions.json`, typed, versioned.
+5. **`precedent_operator.py`** — extend `cross_scale.py`: same-scale matching first, cross-scale analogy channel second. Plus `tests/test_membrane.py` (import wall).
+6. **Prospective rendering** JSON contract, then visual field on top.
+7. Loop closure: outcome capture → vector promotion → index rebuild.
 
-Each step is independently useful; none requires the later ones to justify itself. ⟲ Step 1 is smaller than r0 assumed; steps 1–2 together still upgrade the store from case library toward functional model.
+Each step is independently useful; none requires the later ones to justify itself. ⟲ Step 1 is smaller than r0 assumed; steps 1–3 together still upgrade the store from case library toward functional model. ⟲ Step 2 pays off immediately in phase 1: every approved synonym merge triggers the re-normalize → re-categorize → refile sequence.
 
 <!-- llm: claude-fable-5 | 2026-07-11 | repos/pillars/reify_phase2/reify_phase2_spec_r1.md | created — reconciled revision of reify_phase2_spec.md: delta replaces typed tension_delta, terminal-enum protocol, scale section rewritten against live logos.structural + cross_scale.py, precedent_operator naming, hash ids, membrane test, build order regrounded -->
+<!-- llm: claude-fable-5 | 2026-07-12 | repos/pillars/reify_phase2/reify_phase2_spec_r1.md | added refile.py as build step 2 (renumbered 3-7) — twice-observed gap: synonym merges and clean re-categorize change paths of already-filed inferences; promote only handles unclustered→filed -->
