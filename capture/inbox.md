@@ -1,5 +1,33 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-07-13 — Gradient alive: round-trip, right_pass, three-number tension
+
+Landmark session 2026-07-13 (Fable 5): (1) re-grounded project frame — not justice but social science of conflict; DNA = baseline, un-truth = measurable deviation; beneficial prediction = phase 3. (2) Round-trip loss test built + run (experiments/round_trip/): blind Fable decoder reconstructed "the machine, not the case" from coordinates alone; tier B nailed case class; John: tier A "reads like pure wisdom" — analogic chord confirmed both directions. (3) right_pass rebuilt from the decoder's residue spec: right_facts + claimed-vs-actual discrepancies, quote-grounded, Opus fact_extraction; Sutton 14/4, Washington 24/4. (4) tension_score rewired to three numbers (predicted/confirmed/calibration_delta) — GRADIENT ALIVE: 29/29 measured, range .03–.90; private domain (Gemini family-court research, NOT John's material) tops predicted at .904. (5) Contamination guard: confirmed/delta gated on config/baseline_sources.json — only innocence_project validated; research sources structurally inert to evolution. Changed in vivify-operators: right_pass.py, tension_score.py, fabric.py, config/model_map.json, config/baseline_sources.json (new), experiments/round_trip/ (new), 29 re-scored inferences.
+
+*context: closing note of the session that took the evolution engine from flat-dead thermometer to live three-number gradient with source-gated calibration, via the round-trip loss test on Sutton.*
+
+---
+
+## 2026-07-12 — Where LLM calls belong: meaning enters at the membrane
+
+**Where LLM calls would genuinely help:**
+
+1. **Synonym candidate proposal** (strongest case). The propose-approve loop is currently all-manual eyeballing of a 1,030-keyword list. One cheap LLM pass after each batch of new accounts — "here are keyword pairs that may be the same thought: `delayed_vindication`/`delayed_justice`…" — with John ruling on each. The LLM proposes, never merges. This converts the corpus's biggest measured weakness (92% singleton vocabulary) into a governed pipeline stage. Would have surfaced today's merge automatically.
+
+2. **Vocabulary anchoring inside the existing vivify call** — not a new call, a better prompt: show vivify the corpus's current keywords as *optional* vocabulary ("reuse if apt, mint if needed"). Zero added cost, fixes divergence at the source.
+
+3. **A fidelity checker for reify** (maybe, later). An evaluation-only call comparing the portrait against the `raw_text` reify never saw — scoring coverage and foreignness. Valuable for public cases where nobody can inside-judge. Strict caveat: it's *evaluation*, clearly tagged, never feeding back into filing — otherwise it's machinery grading meaning and then steering it.
+
+**Where LLM calls would actively hurt — the more important half:**
+
+`categorize`, `promote`, `refile` stay exactly as deterministic as built. Their entire value: testable (three suites), idempotent (re-runs are no-ops), auditable (the dry-run *caught the domain-stripping bug before it happened* — an LLM-mediated refile would have plausibly "handled it" and silently wrecked the store). The dual-vocabulary discipline applies to compute too: **meaning enters through LLM calls at the membrane; machinery inside stays rule-bound.** An LLM-assisted categorize is schema-pressure wearing a helpful face.
+
+Token-budget note: the architecture already spends LLM calls only where meaning enters or exits (vivify, logos-fused 8-in-1, conflict, reify) — everything built this week added *zero* recurring LLM cost. Items 1–2 are one call per batch and free, respectively.
+
+*context: John asked whether any of the week's deterministic pipeline work (promote, refile, cleanup, synonym governance) would benefit from LLM calls; this is the boundary answer.*
+
+---
+
 ## 2026-07-12 — NYC reframe: showable beats next
 
 The NYC purpose (collaborators, possibly funding) reframes priorities in one specific way: **for collaborators and funders, what's showable and finished beats what's next.** The showable story is honestly strong right now:
