@@ -47,7 +47,7 @@ First Generation (Current)
 
 Second Generation (Planned)
 
-Semantic edge applications
+Dimensional fields applications
 User-tier connections (non-admin)
 Additional security hardening
 Enhanced install automation
@@ -152,3 +152,5 @@ Human-in-the-loop security
 
 
 Note: android_mnt/ directory contains stale code in git. When SSHFS mounts, it overlays with live phone code. All development happens on the phone via the mount. Git commits should be pushed from the phone (Termux).
+
+<!-- llm: claude-fable-5 | 2026-07-19 | pillars/Semantic_edge_manifesto.md | rebrand: Semantic Edge -> Dimensional Fields -->
