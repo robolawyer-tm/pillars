@@ -1,0 +1,10 @@
+# pillars — stays within our environment, not for public distribution
+backups/
+drafts/
+.claude/
+.env
+# saved web pages — raw browser saves of search results, not project material
+html_save/
+# editor workspace state (records local file layout and recent files)
+.obsidian/
+# llm: claude-opus-5 | 2026-09-15 | repos/pillars/.publish_env_only | exclude html_save/ (saved Google search pages, 11M, were live on the site) and .obsidian/ (editor workspace state)
