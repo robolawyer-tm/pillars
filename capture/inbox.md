@@ -1,5 +1,19 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-09-15 — Wrapup readiness, tooling repointed
+
+The session reached a clean milestone. Everything substantive is committed and pushed: vivify-operators carries the verbatim field rebuild, the index fix and run 4; sys_adm now carries the repointed tooling and the new ingest path (9b27e56).
+
+Two things had gated a clean wrapup, and one is now closed. FIRST, sys_adm held the session's real work uncommitted — publish_repos modified, make_ingest new, and vivify_field, claude_session_post, readlog and the two store packages never tracked at all. Wrapup would never have caught them: its source-repo list is only pillars and vivify-operators. They are committed now, with claude_terminal, the secrets-adjacent seal/encrypt scripts and the bin wrappers deliberately left alone. SECOND, still open: Step 4 runs a full publish_repos, which also syncs the frozen vivify-inferences — eight untracked session inferences would go up from a repo that is otherwise retired.
+
+The pillars working tree carries 31 untracked files, all pre-existing (PDFs, .obsidian/, .claude/, html_save/, logos/). None came from this session, so wrapup surfaces them and leaves them.
+
+One thing wrapup handles itself: the published ingest bundle was built from 28404ac and HEAD is now 9887b0b, so Step 7 rebuilds and republishes it, with no model calls.
+
+*context: assessing, at the end of a session that retired vivify-inferences, rebuilt the field case tellings verbatim from source, and built the ingest tooling, whether the work had reached a wrapup point.*
+
+---
+
 ## 2026-09-07 — Instrument fixes, telling standard
 
 Two threads. FIRST, the Windows laptop became reachable: it exposes WSL's sshd on 10.46.252.58:2222, already forwarded across the WSL2 NAT boundary, so one sshfs mount of `:/` reaches both the WSL side and `D:\Home\John\Desktop\claude`. No WinFSP needed in this direction — that is only for Windows-to-Linux. Built `~/bin/mount_windows_mnt` from shell_template with `--claude` and a `--scan` that re-finds the laptop by SSH banner when the phone hotspot reassigns its address. The mount is login-bound: it survives locking, dies on logoff.
