@@ -1,5 +1,26 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-09-16 — Documentation drift, external claim adjudication
+
+Everything's safe — nothing half-written, suite green at 13/13.
+
+**Uncommitted but working:**
+- `vivify-operators` — `claim_check.py`, `tests/test_claim_check.py`, the `test_docs_match_code.py` fixture exemption
+- `pillars/FLOW.md` — the three-line tension fix
+- `sys_adm/make_ingest` — brief-prepending (already deployed to `~/bin`)
+
+All backed up via `backit`. Three commits already landed in `vivify-operators`, none pushed.
+
+**Today's headline:** the docs drift caught two of three outside readings; that's fixed and guarded. Gemini's reading turned out to be a reception specimen with known ground truth — every operator read it correctly and the false claim escaped all of them, because no channel measured text against an external baseline. `claim_check` now does, and caught it 3/3 on its first run.
+
+**Next session, in order:** commit the above → repeat the gemini run in a fresh session (nothing's quotable until it does) → re-run all three models on the corrected bundle, through `claim_check` this time.
+
+Still parked: the `claude_terminal` ctrl-Z fix, and session `210549` holding its log open.
+
+*context: closing handoff after a session that traced two stale-documentation instances through four files and two repos, found the instrument had no channel measuring a text against an external baseline, and built claim_check.py to supply it.*
+
+---
+
 ## 2026-09-15 — Wrapup readiness, tooling repointed
 
 The session reached a clean milestone. Everything substantive is committed and pushed: vivify-operators carries the verbatim field rebuild, the index fix and run 4; sys_adm now carries the repointed tooling and the new ingest path (9b27e56).

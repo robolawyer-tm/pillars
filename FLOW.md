@@ -14,7 +14,7 @@ Raw inference text enters; a scored, categorized semantic unit exits — the Fab
 - `keyword_graph.py` accumulates co-occurrence edges across all inferences — graph grows with corpus
 - `categorize.py` reads graph seeds (left keywords only) → builds emergent 2-3 layer category tree → assigns `category_paths`
 - **Tension node — conflict**: `right_pass.py` runs a digital/structural pass; keywords describe the same inference analytically, not semantically
-- `tension_score.py` measures left/right divergence — `1.0 - (shared / total unique)` — scores the gap between analog meaning and digital structure
+- `tension_score.py` scores three numbers — `predicted` from operator coordinates, `confirmed` from `right_pass` claimed-vs-actual discrepancies, `calibration_delta` between them
 - **Tension node — resolution**: `beneficial_signals()` surfaces inferences where divergence exceeds threshold — these are intervention candidates
 - Phase 5 `prediction_output()` shapes the result as a navigational signal, not a conclusion
 
@@ -38,7 +38,7 @@ A secret enters encrypted by the client; the server strips routing layers and st
 Tension is structural pressure pointing toward the next evolution — four types, each visible in the flow.
 
 - **Structural** — the unclustered drop point in vivify: inference exists but Fabric hasn't autovivified to place it; graph must accumulate before categorization is possible
-- **Conflict** — left/right divergence measured by `tension_score.py`: analog human meaning pulling against digital structural description; score near 1.0 means the system is under maximum interpretive pressure
+- **Conflict** — un-truth measured by `tension_score.py`: `predicted` is the operator's judgment, `confirmed` is ground truth from the record, and a negative `calibration_delta` is the operator under-smelling what the record confirms
 - **Functional** — rules in `pillars/CLAUDE.md` and `pillars/doc_standard_v1.json`: constraints that resist certain flows (no external taxonomies, no schema-first design, no concluding statements in exploratory sections)
 - **Resolution** — `beneficial_signals()` and Phase 5 output: the pull toward beneficial outcome; what the system is oriented toward, not what it has achieved
 
@@ -48,7 +48,7 @@ Tension is structural pressure pointing toward the next evolution — four types
 
 These paths exist as structural pressure — latent in the Fabric, not yet actualized.
 
-- **Typed tension JSON**: `tension_score.py` outputs a float; the typed shape `{type, magnitude, between, resolution_vector}` is specified but not yet in the code
+- **Typed tension JSON**: `tension_score.py` outputs three numbers rather than the original single float; the typed shape `{type, magnitude, between, resolution_vector}` is specified but still not in the code
 - **Normalization standard**: conflict inputs enter raw — no standard yet for stripping proper nouns, collapsing entities to typed roles, offsetting dates; data contaminates before it vivifies
 - **Cloudflare Workers runtime**: the Fabric is described in terms of Worker isolates and Durable Objects but runs locally in Python; the translation is unactualized
 - **Animal Crossing instantiation**: same underlying model, different population (elders, children) — the instantiation doesn't exist; only the shared model does
@@ -60,3 +60,4 @@ These paths exist as structural pressure — latent in the Fabric, not yet actua
 ---
 
 <!-- llm: claude-sonnet-4-6 | 2026-05-07 | repos/pillars/FLOW.md | created — flow view of actualized and unactualized paths, tension nodes by type -->
+<!-- llm: claude-opus-5 | 2026-09-16 | repos/pillars/FLOW.md | replaced the superseded lexical tension formula with the three-number tension in the actualized flow, the conflict tension node, and the unactualized typed-shape entry -->
