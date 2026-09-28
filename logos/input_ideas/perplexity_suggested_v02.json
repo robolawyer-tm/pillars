@@ -1,0 +1,148 @@
+{
+  "_meta": {
+    "version": "0.2",
+    "status": "formal_seed",
+    "description": "A geometric language structure with Logos as the universal root. Layers are coordinate points, not social labels."
+  },
+  "logos": {
+    "root": true,
+    "axes": {
+      "scale": ["self", "dyad", "small_group", "local_network", "institution", "global"],
+      "density": ["embodied", "proximal", "shared", "distributed", "bureaucratic", "archival"],
+      "persistence": ["momentary", "short_term", "routine", "customary", "institutional", "durable"],
+      "authority": ["self", "pair", "group", "elders", "system", "formal"],
+      "transmission": ["direct", "leak", "ritual", "broadcast", "archive", "code"],
+      "memory_channel": ["episodic", "shared", "semantic", "procedural", "institutional", "global"],
+      "language_mode": ["indexical", "relational", "normative", "symbolic", "contractual", "formalized"]
+    },
+    "layers": [
+      {
+        "id": "self",
+        "coords": {
+          "scale": "self",
+          "density": "embodied",
+          "persistence": "momentary",
+          "authority": "self",
+          "transmission": "direct",
+          "memory_channel": "episodic",
+          "language_mode": "indexical"
+        },
+        "_src": ["searle", "grice"],
+        "_idea": ["self_reference", "inner_narrative"]
+      },
+      {
+        "id": "dyad",
+        "coords": {
+          "scale": "dyad",
+          "density": "proximal",
+          "persistence": "short_term",
+          "authority": "pair",
+          "transmission": "direct",
+          "memory_channel": "shared",
+          "language_mode": "relational"
+        },
+        "_src": ["grice", "searle"],
+        "_idea": ["reciprocity", "shared_intention"]
+      },
+      {
+        "id": "small_group",
+        "coords": {
+          "scale": "small_group",
+          "density": "shared",
+          "persistence": "routine",
+          "authority": "group",
+          "transmission": "leak",
+          "memory_channel": "shared",
+          "language_mode": "normative"
+        },
+        "_src": ["dunbar", "machin"],
+        "_idea": ["bonding", "group_norms"]
+      },
+      {
+        "id": "local_network",
+        "coords": {
+          "scale": "local_network",
+          "density": "distributed",
+          "persistence": "customary",
+          "authority": "elders",
+          "transmission": "ritual",
+          "memory_channel": "semantic",
+          "language_mode": "symbolic"
+        },
+        "_src": ["dunbar", "ostrom", "tonnies"],
+        "_idea": ["reciprocity", "custom", "shared_memory"]
+      },
+      {
+        "id": "institution",
+        "coords": {
+          "scale": "institution",
+          "density": "bureaucratic",
+          "persistence": "institutional",
+          "authority": "system",
+          "transmission": "broadcast",
+          "memory_channel": "institutional",
+          "language_mode": "contractual"
+        },
+        "_src": ["ostrom", "tonnies"],
+        "_idea": ["rules", "contracts", "organization"]
+      },
+      {
+        "id": "global",
+        "coords": {
+          "scale": "global",
+          "density": "archival",
+          "persistence": "durable",
+          "authority": "formal",
+          "transmission": "code",
+          "memory_channel": "global",
+          "language_mode": "formalized"
+        },
+        "_src": ["benedict", "douglas"],
+        "_idea": ["archive", "formalism", "cross_cultural_structure"]
+      }
+    ],
+    "cross_cutting": {
+      "family": {
+        "kind": "overlay",
+        "spans": ["self", "dyad", "small_group"],
+        "features": ["kin_relation", "reciprocity", "shared_memory"],
+        "_src": ["dunbar", "machin"]
+      },
+      "culture": {
+        "kind": "overlay",
+        "spans": ["local_network", "institution", "global"],
+        "features": ["symbolic_stability", "norm_reproduction", "archive_support"],
+        "_src": ["benedict", "tonnies"]
+      },
+      "religion": {
+        "kind": "overlay",
+        "spans": ["small_group", "local_network", "institution", "global"],
+        "features": ["shared_cosmology", "ritual_transmission", "nonlocal_authority"],
+        "_src": ["douglas", "tonnies"]
+      },
+      "society": {
+        "kind": "aggregate",
+        "spans": ["local_network", "institution", "global"],
+        "features": ["role_systems", "rule_systems", "mass_transmission"],
+        "_src": ["ostrom", "tonnies", "dunbar"]
+      }
+    },
+    "constraints": {
+      "orthogonality": [
+        "scale is independent of memory_channel",
+        "authority is independent of transmission",
+        "language_mode is independent of density"
+      ],
+      "monotonicity": [
+        "persistence generally increases with scale",
+        "archival transmission appears only at high scale",
+        "formal authority emerges at upper layers"
+      ],
+      "notes": [
+        "Layers are coordinate points in a semantic field, not literal social groups.",
+        "Overlays may span multiple layers.",
+        "Sources are stored locally at each node for easier editing and lookup."
+      ]
+    }
+  }
+}
