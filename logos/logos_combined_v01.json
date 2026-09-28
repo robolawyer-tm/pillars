@@ -1,0 +1,233 @@
+{
+  "_meta": {
+    "version": "0.1-combined",
+    "status": "hypothesis — two approaches held in tension, designed to be deformed by the inference store",
+    "dichotomy": "structure/function — orthogonal to the founding analog/digital tension",
+    "description": "Two alternate approaches to the logos coordinate system held in the same file. Functional (event-level: what communication does) and structural (context-level: where communication occurs in social space). A model reading this should react to both simultaneously. The _relationship block names what is known and unknown about how they compose.",
+    "component": "logos — combined structural and functional schema",
+    "sources": [
+      "Speech Act Theory — Austin, Searle (functional)",
+      "Cooperative Principle — Grice (functional)",
+      "Grid/Group framework — Douglas (functional)",
+      "Dunbar — group size thresholds, empirical (structural)",
+      "Tönnies — gemeinschaft/gesellschaft (structural)",
+      "Machin — affective field, placeholder (structural)",
+      "Ostrom — governance/reciprocity (structural)",
+      "Benedict — cultural layer, thin sourcing (structural)",
+      "Logos Core Tree — synthesized in project (both)",
+      "logos_schema_v01.json — functional source",
+      "input_ideas/perplexity_suggested_v02.json — structural source"
+    ],
+    "llm": "claude-sonnet-4-6 | 2026-05-20 | pillars/logos/logos_combined_v01.json | created — functional (logos_schema_v01) and structural (perplexity_suggested_v02) held in tension; _relationship block names overlap candidates and open questions"
+  },
+
+  "functional": {
+    "_level": "event — what communication does",
+    "_schema_ref": "logos_schema_v01.json",
+    "description": "Sparse coordinate system for individual communication acts at the local scale. Utterances do things — this schema describes what they do, how they are received, and whether cooperative maxims are honored.",
+    "dimensions": {
+      "act_type": {
+        "description": "What kind of action the communication performs.",
+        "values": {
+          "assertive":   "claims something is true",
+          "directive":   "attempts to get someone to do something",
+          "commissive":  "commits the speaker to future action",
+          "expressive":  "expresses psychological state",
+          "declaration": "changes reality by being said"
+        }
+      },
+      "transmission": {
+        "description": "How the communication moves through the social field.",
+        "values": {
+          "broadcast": "one-to-many, public, low fidelity to source",
+          "leak":      "restricted, few recipients, high emotional charge, unofficial",
+          "archive":   "past-to-future, preserved, institutional, resistant to revision"
+        }
+      },
+      "resonance": {
+        "description": "The emotional field the communication carries or creates.",
+        "values": {
+          "harmony":  "synchronization, shared understanding, empathic alignment",
+          "friction": "disconnection, dissonance, unempathic states",
+          "illusion": "apparent harmony masking underlying friction"
+        }
+      },
+      "authority": {
+        "description": "What power structure the communication draws on to be heard.",
+        "values": {
+          "sovereign": "top-down, institutional, formal, legal",
+          "tribal":    "horizontal, peer, normative, cultural",
+          "occult":    "hidden, known only within a restricted group"
+        }
+      },
+      "utility": {
+        "description": "What the communication is functionally for — its payload.",
+        "values": {
+          "instruction": "actionable, enabling",
+          "narrative":   "meaning-making, contextualizing, mythologizing",
+          "currency":    "value-tracking, social capital, ledger of obligation"
+        }
+      },
+      "cooperative": {
+        "description": "Whether Grice's cooperative maxims are honored or violated. Violations generate implicature — meaning beyond the words. The gap between said and meant is a tension signal.",
+        "maxims": {
+          "quantity": "say enough, not too much",
+          "quality":  "say what you believe to be true",
+          "relation": "say what is relevant",
+          "manner":   "be clear and orderly"
+        },
+        "status": ["honored", "violated", "suspended"]
+      },
+      "social_field": {
+        "description": "Douglas grid/group axes describing the social constraint field.",
+        "grid":  "0.0-1.0: degree to which behavior is constrained by explicit rules",
+        "group": "0.0-1.0: degree to which individual identity is defined by group membership"
+      }
+    }
+  },
+
+  "structural": {
+    "_level": "context — where communication occurs in social space",
+    "_schema_ref": "input_ideas/perplexity_suggested_v02.json",
+    "description": "Geometric coordinate system for locating communication contexts in social space. Layers are coordinate points, not social labels. Axes are ordered from self to global scale.",
+    "axes": {
+      "scale":          ["self", "dyad", "small_group", "local_network", "institution", "global"],
+      "density":        ["embodied", "proximal", "shared", "distributed", "bureaucratic", "archival"],
+      "persistence":    ["momentary", "short_term", "routine", "customary", "institutional", "durable"],
+      "authority":      ["self", "pair", "group", "elders", "system", "formal"],
+      "transmission":   ["direct", "leak", "ritual", "broadcast", "archive", "code"],
+      "memory_channel": ["episodic", "shared", "semantic", "procedural", "institutional", "global"],
+      "language_mode":  ["indexical", "relational", "normative", "symbolic", "contractual", "formalized"]
+    },
+    "layers": [
+      {
+        "id": "self",
+        "coords": { "scale": "self", "density": "embodied", "persistence": "momentary", "authority": "self", "transmission": "direct", "memory_channel": "episodic", "language_mode": "indexical" },
+        "_src": ["searle", "grice"]
+      },
+      {
+        "id": "dyad",
+        "coords": { "scale": "dyad", "density": "proximal", "persistence": "short_term", "authority": "pair", "transmission": "direct", "memory_channel": "shared", "language_mode": "relational" },
+        "_src": ["grice", "searle"]
+      },
+      {
+        "id": "small_group",
+        "coords": { "scale": "small_group", "density": "shared", "persistence": "routine", "authority": "group", "transmission": "leak", "memory_channel": "shared", "language_mode": "normative" },
+        "_src": ["dunbar", "machin"]
+      },
+      {
+        "id": "local_network",
+        "coords": { "scale": "local_network", "density": "distributed", "persistence": "customary", "authority": "elders", "transmission": "ritual", "memory_channel": "semantic", "language_mode": "symbolic" },
+        "_src": ["dunbar", "ostrom", "tonnies"]
+      },
+      {
+        "id": "institution",
+        "coords": { "scale": "institution", "density": "bureaucratic", "persistence": "institutional", "authority": "system", "transmission": "broadcast", "memory_channel": "institutional", "language_mode": "contractual" },
+        "_src": ["ostrom", "tonnies"]
+      },
+      {
+        "id": "global",
+        "coords": { "scale": "global", "density": "archival", "persistence": "durable", "authority": "formal", "transmission": "code", "memory_channel": "global", "language_mode": "formalized" },
+        "_src": ["benedict", "douglas"]
+      }
+    ],
+    "cross_cutting": {
+      "family": {
+        "kind": "overlay",
+        "spans": ["self", "dyad", "small_group"],
+        "features": ["kin_relation", "reciprocity", "shared_memory"],
+        "_src": ["dunbar", "machin"]
+      },
+      "culture": {
+        "kind": "overlay",
+        "spans": ["local_network", "institution", "global"],
+        "features": ["symbolic_stability", "norm_reproduction", "archive_support"],
+        "_src": ["benedict", "tonnies"]
+      },
+      "religion": {
+        "kind": "overlay",
+        "spans": ["small_group", "local_network", "institution", "global"],
+        "features": ["shared_cosmology", "ritual_transmission", "nonlocal_authority"],
+        "_src": ["douglas", "tonnies"]
+      },
+      "society": {
+        "kind": "aggregate",
+        "spans": ["local_network", "institution", "global"],
+        "features": ["role_systems", "rule_systems", "mass_transmission"],
+        "_src": ["ostrom", "tonnies", "dunbar"]
+      }
+    },
+    "constraints": {
+      "orthogonality": [
+        "scale is independent of memory_channel",
+        "authority is independent of transmission",
+        "language_mode is independent of density"
+      ],
+      "monotonicity": [
+        "persistence generally increases with scale",
+        "archival transmission appears only at high scale",
+        "formal authority emerges at upper layers"
+      ]
+    }
+  },
+
+  "_relationship": {
+    "status": "open — inference store decides",
+    "known": [
+      "functional describes event-level communication: what an utterance does",
+      "structural describes context-level social space: where communication occurs",
+      "these are not competing — they operate at different levels of analysis",
+      "both are needed for a complete logos coordinate",
+      "the structure/function dichotomy is orthogonal to the founding analog/digital tension — the product is a 2x2 space"
+    ],
+    "unknown": [
+      "how functional and structural compose into a single inference tag",
+      "whether the analog/digital axis cross-cuts both or maps differently onto each",
+      "whether tension score needs two independent axes (analog/digital AND structure/function)",
+      "which structural layer a given functional act_type is most likely to occur at",
+      "whether resonance (functional) and density (structural) are independent or correlated"
+    ],
+    "overlap_candidates": [
+      "authority: functional has 3 values (sovereign/tribal/occult), structural has 6-value scale (self→formal) — same axis at different resolutions?",
+      "transmission: functional has 3 values (broadcast/leak/archive), structural has 6 values (direct/leak/ritual/broadcast/archive/code) — 'leak' and 'broadcast' and 'archive' appear in both — structural may be a higher-resolution version of functional"
+    ],
+    "generative_questions": [
+      "Does a 'declaration' act_type (functional) only occur at 'institution' or 'global' structural layers?",
+      "Does 'illusion' resonance (functional) correlate with 'institutional' or 'durable' persistence (structural)?",
+      "Is the cooperative 'violated' status more likely at high structural scale (institution, global)?",
+      "Do the structural monotonicity constraints predict anything about functional resonance trajectories?"
+    ]
+  },
+
+  "inference_tag": {
+    "description": "An inference may be tagged against functional dimensions, structural coordinates, or both. Partial tagging is valid — a model should tag what it can and leave the rest null.",
+    "template": {
+      "logos_combined_v01": {
+        "functional": {
+          "act_type":    null,
+          "transmission": null,
+          "resonance":   null,
+          "authority":   null,
+          "utility":     null,
+          "cooperative": {
+            "maxim_violated": null,
+            "status":         null
+          },
+          "social_field": {
+            "grid":  null,
+            "group": null
+          }
+        },
+        "structural": {
+          "scale":          null,
+          "density":        null,
+          "persistence":    null,
+          "authority":      null,
+          "transmission":   null,
+          "memory_channel": null,
+          "language_mode":  null
+        }
+      }
+    }
+  }
+}

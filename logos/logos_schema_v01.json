@@ -1,0 +1,97 @@
+{
+  "_meta": {
+    "version": "0.1-seed",
+    "status": "hypothesis — designed to be deformed by the inference store",
+    "description": "Sparse coordinate system for social communication at the local scale (individual to nearby society). Abstract enough to apply across fields. Does not describe civilization-level or institutional language — that is where the sanitizing status quo operates. This schema covers the pre-institutional layer where communication is most genuine.",
+    "component": "signify (functional communication)",
+    "sources": [
+      "Speech Act Theory — Austin, Searle",
+      "Cooperative Principle — Grice",
+      "Grid/Group framework — Douglas (Purity and Danger)",
+      "Logos Core Tree — synthesized in project (not from a single author)"
+    ],
+    "llm": "claude-sonnet-4-6 | 2026-05-20 | pillars/logos/logos_schema_v01.json | created seed schema from session synthesis"
+  },
+  "dimensions": {
+    "act_type": {
+      "description": "What kind of action the communication performs. From speech act theory — utterances do things, they are not just descriptions.",
+      "values": {
+        "assertive":   "claims something is true",
+        "directive":   "attempts to get someone to do something",
+        "commissive":  "commits the speaker to future action",
+        "expressive":  "expresses psychological state",
+        "declaration": "changes reality by being said (a verdict, a ruling, a dismissal)"
+      }
+    },
+    "transmission": {
+      "description": "How the communication moves through the social field. Describes the channel, not the content.",
+      "values": {
+        "broadcast": "one-to-many, public, low fidelity to source",
+        "leak":      "restricted, few recipients, high emotional charge, unofficial",
+        "archive":   "past-to-future, preserved, institutional, resistant to revision"
+      }
+    },
+    "resonance": {
+      "description": "The emotional field the communication carries or creates in the local social environment.",
+      "values": {
+        "harmony":  "synchronization, shared understanding, empathic alignment",
+        "friction": "disconnection, dissonance, unempathic states",
+        "illusion": "apparent harmony masking underlying friction"
+      }
+    },
+    "authority": {
+      "description": "What power structure or trust source the communication draws on to be heard.",
+      "values": {
+        "sovereign": "top-down, institutional, formal, legal",
+        "tribal":    "horizontal, peer, normative, cultural",
+        "occult":    "hidden, not publicly acknowledged, known only within a restricted group"
+      }
+    },
+    "utility": {
+      "description": "What the communication is functionally for — its payload.",
+      "values": {
+        "instruction": "actionable, enabling — tells someone how or what to do",
+        "narrative":   "meaning-making, contextualizing, mythologizing",
+        "currency":    "value-tracking, social capital, ledger of obligation"
+      }
+    },
+    "cooperative": {
+      "description": "Whether Grice's cooperative maxims are honored or violated. Violations generate implicature — meaning beyond the words. The gap between said and meant is a tension signal.",
+      "maxims": {
+        "quantity": "say enough, not too much",
+        "quality":  "say what you believe to be true",
+        "relation": "say what is relevant",
+        "manner":   "be clear and orderly"
+      },
+      "status": ["honored", "violated", "suspended"]
+    },
+    "social_field": {
+      "description": "Douglas grid/group axes describing the social constraint field in which the communication occurs.",
+      "grid":  "0.0-1.0: degree to which behavior is constrained by explicit rules (0.0=unconstrained, 1.0=rigid)",
+      "group": "0.0-1.0: degree to which individual identity is defined by group membership (0.0=individual, 1.0=collective)"
+    }
+  },
+  "inference_tag": {
+    "description": "How a specific inference is placed in this coordinate space. All fields null by default — an inference does not need to fill every dimension.",
+    "template": {
+      "logos_v01": {
+        "act_type":    null,
+        "transmission": null,
+        "resonance":   null,
+        "authority":   null,
+        "utility":     null,
+        "cooperative": {
+          "maxim_violated": null,
+          "status":         null
+        },
+        "social_field": {
+          "grid":  null,
+          "group": null
+        }
+      }
+    }
+  },
+  "what_this_is_not": {
+    "note": "This schema does not cover the non-verbal, silent, affective layer of communication — the vibe operating below speech that drives local social environments and can move to population-level influence. That layer is the social neurology component, partially developed in pillars/. The tension between what signify captures (explicit) and what social neurology operates (implicit) is where the most significant social signals live."
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "_meta": {
+    "version": "0.1-seed",
+    "status": "hypothesis — designed to be deformed by the inference store",
+    "description": "Social container model layering Dunbar group-size thresholds with logos dimensions. Each layer carries signify coordinates, social_neurology placeholders, and tension stubs. Composes with logos_schema_v01 (signify) — this schema says where, signify says how. Weak sourcing (Benedict, Machin affective_field values) is intentional — evolutionary pressure from the inference store decides what survives.",
+    "component": "logos social structure",
+    "sources": [
+      "Dunbar — group size thresholds (neocortex ratio, empirical)",
+      "Tönnies — gemeinschaft/gesellschaft (pre-institutional vs. institutional phase change)",
+      "Machin — affective field (placeholder values — not yet validated by inference store)",
+      "Ostrom — governance/reciprocity at village scale",
+      "Benedict — cultural layer (thin sourcing — evolutionary pressure applies)",
+      "logos_schema_v01.json — signify dimensions embedded per layer",
+      "input_ideas/logos_structure_linguist_combined_perplexity — source synthesis from Perplexity model 2026-05-20"
+    ],
+    "structure_notes": [
+      "tension is derived from logos.signify × logos.social_neurology — not a primary input dimension",
+      "operators is first-class per layer — receives operator references when vivify writes to it",
+      "social_neurology._status=stub — schema in development; processing code should not treat as equivalent to signify",
+      "_inferences array per layer — evidence accumulates here as inference store grows; makes deformation auditable"
+    ],
+    "llm": "claude-sonnet-4-6 | 2026-05-20 | pillars/logos/logos_social_v01.json | restructured per opus-4.7 review: tension as derived, operators first-class, social_neurology stub marker, _inferences per layer"
+  },
+  "person": {
+    "size": 1,
+    "bond_type": "self",
+    "maintenance": "internal",
+    "character": "gemeinschaft",
+    "_src": ["dunbar"],
+    "logos": {
+      "signify": {
+        "act_type": "expressive",
+        "transmission": null,
+        "resonance": "harmony",
+        "authority": "occult",
+        "utility": "narrative",
+        "cooperative": {
+          "status": "suspended"
+        },
+        "social_field": {
+          "grid": 0.0,
+          "group": 0.0
+        },
+        "_src": ["searle", "grice", "douglas"]
+      },
+      "social_neurology": {
+        "_status": "stub",
+        "affective_field": "baseline",
+        "contagion": null,
+        "_src": ["machin"]
+      }
+    },
+    "tension": {
+      "score": null,
+      "divergence": null,
+      "_derived_from": ["logos.signify", "logos.social_neurology"]
+    },
+    "operators": [],
+    "_inferences": []
+  },
+  "intimate": {
+    "size": 5,
+    "bond_type": "oxytocin",
+    "maintenance": "physical_proximity",
+    "character": "gemeinschaft",
+    "_src": ["dunbar", "machin"],
+    "logos": {
+      "signify": {
+        "act_type": "expressive",
+        "transmission": "leak",
+        "resonance": "harmony",
+        "authority": "tribal",
+        "utility": "currency",
+        "cooperative": {
+          "status": "honored"
+        },
+        "social_field": {
+          "grid": 0.1,
+          "group": 0.9
+        },
+        "_src": ["searle", "grice", "douglas"]
+      },
+      "social_neurology": {
+        "_status": "stub",
+        "affective_field": "high",
+        "contagion": "direct",
+        "_src": ["machin"]
+      }
+    },
+    "tension": {
+      "score": null,
+      "divergence": null,
+      "_derived_from": ["logos.signify", "logos.social_neurology"]
+    },
+    "operators": [],
+    "_inferences": []
+  },
+  "sympathy_group": {
+    "size": 15,
+    "bond_type": "endorphin",
+    "maintenance": "frequent_contact",
+    "character": "gemeinschaft",
+    "_src": ["dunbar", "machin"],
+    "logos": {
+      "signify": {
+        "act_type": "directive",
+        "transmission": "leak",
+        "resonance": "harmony",
+        "authority": "tribal",
+        "utility": "currency",
+        "cooperative": {
+          "status": "honored"
+        },
+        "social_field": {
+          "grid": 0.2,
+          "group": 0.8
+        },
+        "_src": ["searle", "grice", "douglas"]
+      },
+      "social_neurology": {
+        "_status": "stub",
+        "affective_field": "medium",
+        "contagion": "ambient",
+        "_src": ["machin"]
+      }
+    },
+    "tension": {
+      "score": null,
+      "divergence": null,
+      "_derived_from": ["logos.signify", "logos.social_neurology"]
+    },
+    "operators": [],
+    "_inferences": []
+  },
+  "village": {
+    "size": 150,
+    "bond_type": "shared_memory",
+    "maintenance": "reciprocity",
+    "character": "gemeinschaft",
+    "governance": "natural_self_organizing",
+    "_src": ["dunbar", "machin", "ostrom", "tonnies"],
+    "logos": {
+      "signify": {
+        "act_type": "assertive",
+        "transmission": "leak",
+        "resonance": "harmony",
+        "authority": "tribal",
+        "utility": "narrative",
+        "cooperative": {
+          "status": "honored"
+        },
+        "social_field": {
+          "grid": 0.4,
+          "group": 0.7
+        },
+        "_src": ["searle", "grice", "douglas"]
+      },
+      "social_neurology": {
+        "_status": "stub",
+        "affective_field": "medium",
+        "contagion": "ambient",
+        "_src": ["machin"]
+      }
+    },
+    "tension": {
+      "score": null,
+      "divergence": null,
+      "_derived_from": ["logos.signify", "logos.social_neurology"]
+    },
+    "operators": [],
+    "_inferences": []
+  },
+  "culture": {
+    "size": 500,
+    "bond_type": "symbolic",
+    "maintenance": "ritual_and_language",
+    "character": "transitional",
+    "_src": ["dunbar", "tonnies", "benedict"],
+    "_note": "phase transition — cooperative.status flips to violated, resonance becomes illusion; status quo operator begins here",
+    "logos": {
+      "signify": {
+        "act_type": "assertive",
+        "transmission": "broadcast",
+        "resonance": "illusion",
+        "authority": "tribal",
+        "utility": "narrative",
+        "cooperative": {
+          "status": "violated"
+        },
+        "social_field": {
+          "grid": 0.5,
+          "group": 0.6
+        },
+        "_src": ["searle", "grice", "douglas"]
+      },
+      "social_neurology": {
+        "_status": "stub",
+        "affective_field": "diffuse",
+        "contagion": "population",
+        "_src": ["machin"]
+      }
+    },
+    "tension": {
+      "score": null,
+      "divergence": null,
+      "_derived_from": ["logos.signify", "logos.social_neurology"]
+    },
+    "operators": [],
+    "_inferences": []
+  },
+  "religion": {
+    "size": null,
+    "bond_type": "narrative",
+    "maintenance": "shared_cosmology",
+    "character": "transitional",
+    "_src": ["douglas", "tonnies"],
+    "_note": "no size bound — crosses Dunbar frame; authority=occult, cooperative=suspended; shared cosmology operates outside cooperative framework",
+    "logos": {
+      "signify": {
+        "act_type": "declaration",
+        "transmission": "broadcast",
+        "resonance": "illusion",
+        "authority": "occult",
+        "utility": "narrative",
+        "cooperative": {
+          "status": "suspended"
+        },
+        "social_field": {
+          "grid": 0.7,
+          "group": 0.9
+        },
+        "_src": ["searle", "grice", "douglas"]
+      },
+      "social_neurology": {
+        "_status": "stub",
+        "affective_field": "high",
+        "contagion": "ritual",
+        "_src": ["machin"]
+      }
+    },
+    "tension": {
+      "score": null,
+      "divergence": null,
+      "_derived_from": ["logos.signify", "logos.social_neurology"]
+    },
+    "operators": [],
+    "_inferences": []
+  },
+  "society": {
+    "size": 1500,
+    "bond_type": "contractual",
+    "maintenance": "institution",
+    "character": "gesellschaft",
+    "governance": "rule_based",
+    "_src": ["dunbar", "ostrom", "tonnies"],
+    "_note": "status quo operator fully operational here — archive transmission, sovereign authority, cooperative violated",
+    "logos": {
+      "signify": {
+        "act_type": "directive",
+        "transmission": "archive",
+        "resonance": "friction",
+        "authority": "sovereign",
+        "utility": "instruction",
+        "cooperative": {
+          "status": "violated"
+        },
+        "social_field": {
+          "grid": 0.9,
+          "group": 0.3
+        },
+        "_src": ["searle", "grice", "douglas"]
+      },
+      "social_neurology": {
+        "_status": "stub",
+        "affective_field": "suppressed",
+        "contagion": null,
+        "_src": ["machin"]
+      }
+    },
+    "tension": {
+      "score": null,
+      "divergence": null,
+      "_derived_from": ["logos.signify", "logos.social_neurology"]
+    },
+    "operators": [],
+    "_inferences": []
+  }
+}
