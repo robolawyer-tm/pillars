@@ -1,5 +1,17 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-09-29 — Host cleanup closed
+
+Yes, housekeeping is done. I checked that the folder is gone: the server's `repos/` directory now holds only `ingest`, `pillars` and `vivify-operators`, and the old README returns 404.
+
+Removing that folder also took the Innocence Project text off your website. That text is still in the public `vivify-inferences` repo on GitHub, so the licensing and attribution question remains open. That's a decision for another day, not tonight's cleanup.
+
+I updated the memory note. It records this item as closed, and that in auto mode remote deletes have to go through you, because the allow rule didn't help. The unused rule is still in `~/.claude/settings.json`, and you can remove it whenever you like.
+
+*context: closing tonight's housekeeping — the retired vivify-inferences copy was deleted from wholesystemsmodel.org after auto mode blocked the remote rm even with an allow rule.*
+
+---
+
 ## 2026-09-16 — Documentation drift, external claim adjudication
 
 Everything's safe — nothing half-written, suite green at 13/13.
@@ -1427,3 +1439,16 @@ Proposed JSON shape:
 *context: Architecture session with Sonnet 4.6 webface — named and typed TENSION, typed it into four categories, clarified FABRIC/FLOW/TENSION as the three components, confirmed Cloudflare Workers direction, surveyed the full project ecosystem.*
 
 ---
+
+## 2026-09-25 — fused vs per-operator comparison: set up, not yet run
+
+Interrupted before any LLM call. Nothing written to the store. Resume facts:
+
+- **Test to run:** same inference through `logos_fused.py` and `logos_operator.py`, both with `--dry-run`, compare the 8 dims. Premise under test is `logos_fused.py:6-9` — "the 8 logos dimensions are independent (they only read raw_text)". If the paths disagree, that premise is false and every fused coordinate in the store inherits it.
+- **Comparison is fair:** all 7 dimension operators + act_type use `call_and_vote` (`lib/vivify_core.py:662`), same as the fused path's `_fused_vote()`. Both are majority-of-3 at default `VIVIFY_VOTES`.
+- **Cost:** fused = 3 calls. Per-operator = 8 dims x 3 draws = 24 calls, raw_text re-sent each time. ~27 calls per inference.
+- **Use `--dry-run` on both.** All 5 `inferences/field/inf_*.json` are real stored inferences with coordinates already attached; a bare run overwrites them.
+- **Free third column:** every one of the 5 has `logos._runner: logos_fused.py`, so the stored coordinates are themselves a fused sample from an earlier session — fused-vs-per-op and fused-vs-fused-across-sessions can be read off the same run.
+- **Candidates:** `inf_b097e1d7` (Cotton, 2899 B, smallest) or `inf_0f31de7a` (Cotton, 3673 B) for the cheap first pass; `inf_285ae7ab` / `inf_a3d99808` / `inf_f39647fd` are canonical.
+- Doc `06_code_gaps.md` lists this as gap #3 and says order-effect tests "cannot run" — they can; `logos_operator.py` is still present.
+
