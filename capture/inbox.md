@@ -1,5 +1,25 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-05 — Dyads: model-as-cause null
+
+I added the null about the reading model as **null 4** under Nulls. The previous version is backed up in `~/backups/home/new_material/`.
+
+- **The problem it names:** one model reads both accounts, and its own habits (favourite labels, a lean toward certain readings of loss) push both sides the same way. The doc said accounts were "measured separately", but that only separates the calls, not the reader.
+- **First guard:** read true pairs and shuffled pairs with the same model version, at the same settings and in the same run. Otherwise a model change between them shows up as a dyad effect.
+- **Second guard:** read side A with one model family and side B with another. The stored model name on each reading lets you check the split afterwards.
+
+While rereading I fixed one overclaim of my own. I had written that a model's habits *cannot* survive two different readers. Model families learn from overlapping text and share some habits, so it now says the second guard **reduces** the problem rather than removing it.
+
+Two follow-on changes:
+- Contextuality-by-Default is now null 5, and the line 47 fix that points to it now says "Nulls, 5".
+- The falsification list gained a line: the hypothesis is weakened if the effect disappears when the two sides are read by different models.
+
+The memory note for `new_material` records this addition.
+
+*context: revising the HYPOTHETICAL ~/new_material/13 "distant empathy" doc — quantum non-separability as a mathematical analogy for bonds under separation, prompted by the W-state measurement paper (Sci. Adv. 2025); same session fixed the line-47 overclaim and added a W-vs-GHZ section.*
+
+---
+
 ## 2026-09-29 — Host cleanup closed
 
 Yes, housekeeping is done. I checked that the folder is gone: the server's `repos/` directory now holds only `ingest`, `pillars` and `vivify-operators`, and the old README returns 404.
