@@ -1,5 +1,19 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-15 — Replays, wrapup handoff
+
+Yes, wrap up now. Run `/wrapup` and I'll take it from there. It costs very little, since only the capture and memory steps use the model:
+
+- **Capture and memory:** I'll capture the closing note. Most of the memory is already saved.
+- **Commits:** both repos are close to clean. The `reify` and left-pass changes are already pushed, and the replay files are private and outside the repos. The only likely change is the inbox note, and I'll ask before committing it.
+- **Publish and ingest bundle:** the bundle will rebuild this time, because `reify.py` and `vivify.py` changed. That runs on your machine without the model.
+
+After that, start a fresh session. "Next up: the counter-force measure" is enough to pick up the thread from memory.
+
+*context: closing a long session — Opus model alias, reify preamble + grounding rules, Sutton and Brown streaming replays (v2 early hit at slice 13, one before the turn), counter-force identified as the missing measure; wrapped up early to save tokens.*
+
+---
+
 ## 2026-10-05 — Dyads: model-as-cause null
 
 I added the null about the reading model as **null 4** under Nulls. The previous version is backed up in `~/backups/home/new_material/`.
