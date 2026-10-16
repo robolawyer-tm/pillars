@@ -1,5 +1,17 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-16 — Counter-force coordinate committed
+
+I took your "yes" as "commit now" and committed the counter-force change as `7dc7aae` in `vivify-operators`. The commit covers three files: the operator, the coordinate schema and the tests. It isn't pushed yet; the push can go with `/wrapup`. The unjudged blind round-trip files stayed out of the commit.
+
+Next is the **"on whom"** field, so a reversal for one person (Adams) no longer reads as a reversal of the whole case (Sutton). Re-checking it costs the 4 calls for Sutton slices 3–4 and 10, at one vote each.
+
+Result behind it (1 vote, both cases): Brown none 1–2 / declining 3–6 / contesting 7–11 / taken_up 12–15 (turn 14); Sutton contesting 8–9, taken_up 10–12 (turn 10), false taken_up 3–4. Counter-force is read in reverse (John): find the coercion, extraction or twisting first; a bare denial is positioning. Self-reversal is recorded, not forbidden, and it clusters at the turn. Write-up: ~/private_field/replay/counter_force_explore_v0.md.
+
+*context: building and first-running the counter-force coordinate on the Brown and Sutton replays.*
+
+---
+
 ## 2026-10-15 — Replays, wrapup handoff
 
 Yes, wrap up now. Run `/wrapup` and I'll take it from there. It costs very little, since only the capture and memory steps use the model:
