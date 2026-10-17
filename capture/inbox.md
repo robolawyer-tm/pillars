@@ -1,5 +1,23 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-17 — Blind round two passes
+
+The round-two files are committed and pushed as `1683292`, and the result is now in the doc (https://claude.ai/code/artifact/ac353ff3-f81a-4b53-9a87-d626bc6ad337).
+
+**Commit:** only the 13 files in `experiments/round_trip/v2/` went in. The round-one files in `experiments/round_trip/` are still uncommitted.
+
+**Doc:** a new section, "Do the readings carry the case?", sits between the Brown section and "Where it went wrong". It has a one-sentence lead, a plain description of the test, and a table of all six verdicts across both rounds. Four short points follow: why Gemini's round-one verdict is void; why the order the accounts were shown in made no difference; the case facts the judges cited; what the test doesn't show.
+
+Two cells in the table are assumptions: both round-one judges are marked as seeing the real account first (that packet put X before Y), and Gemini's first round-two run is marked "real first" (the button used wasn't stated).
+
+Round two result: key P = real; ChatGPT P-first and Q-first, Gemini (AI Studio) P-first and Q-first — all four picked P at 98%. With Sonnet's round-one pass, three model families pass. One case, one scramble.
+
+The milestone now waits only on John's OK of the doc.
+
+*context: closing the blind round-trip test — scoring round two across ChatGPT and Gemini, committing the v2 files, and adding the result to the Sutton expert doc.*
+
+---
+
 ## 2026-10-17 — Brown chart added
 
 Brown now has its own chart under "What it saw", and I replied in the comment thread.
