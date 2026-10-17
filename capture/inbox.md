@@ -1,5 +1,13 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-17 — Brown chart added
+
+Brown now has its own chart under "What it saw", and I replied in the comment thread.
+
+*context: the Sutton expert doc (https://claude.ai/code/artifact/ac353ff3-f81a-4b53-9a87-d626bc6ad337) gained a second chart. In the Brown case the pushback reading went declining at step 3, contesting from step 7, and taken up at step 12, two steps before the state consented at 14, with one lower reading at step 13.*
+
+---
+
 ## 2026-10-17 — Expert prose piece drafted
 
 [Reading a Case as It Unfolded — Sutton](https://claude.ai/code/artifact/ac353ff3-f81a-4b53-9a87-d626bc6ad337) is drafted. Read it over and edit inline, or answer my comment on whether Brown gets its own chart.
