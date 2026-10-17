@@ -1,5 +1,36 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-17 — Expert prose piece drafted
+
+[Reading a Case as It Unfolded — Sutton](https://claude.ai/code/artifact/ac353ff3-f81a-4b53-9a87-d626bc6ad337) is drafted. Read it over and edit inline, or answer my comment on whether Brown gets its own chart.
+
+*context: the third milestone-gate item. It's a plain-language Claude Doc for domain experts: the Sutton case in 12 steps, how the replay works, a chart of the pushback reading (contesting at steps 8–9, taken up at the turn at 10), the limits, and six questions for experts.*
+
+---
+
+## 2026-10-17 — Brown on-whom rerun
+
+Yes, the Brown run is complete. Slice 9 failed once on a CLI error ("claude exited 1") and worked on the rerun, so all 15 slices now have readings from the "on whom" prompt.
+
+| Brown slices | counter_force |
+|---|---|
+| 1–2 | none |
+| 3–6 | declining |
+| 7–11 | contesting |
+| 12 | taken_up |
+| **13** | **contesting** |
+| 14–15 | taken_up |
+
+- **The rise is the same as before.** Every force lands "on Brown", so "on whom" changed nothing here. That's expected for a case with no co-defendant; Sutton's false alarm was the one it needed to fix.
+- **Slice 13 is a single-draw wobble.** Its own signals list the police running the prints and the state disclosing that Babb never searched them. Both are the institution reversing itself, yet the value says `contesting`. So a reading's value can disagree with its own evidence. A 3-vote run would settle it, but that's for a frozen test, not exploration.
+- **The self-reversal marker misses some cases.** It doesn't match "by Babb" against "the police department", although Babb worked there. The marker compares names, so a person and their institution read as different actors.
+
+I added these results to `~/private_field/replay/counter_force_explore_v0.md` and to memory. The previous Brown readings are in `brown/runs_cf_prev/`. This was 16 calls, counting the failed slice 9 and its rerun.
+
+*context: rerunning all 15 Brown replay slices on the counter-force prompt that records on whom each force falls.*
+
+---
+
 ## 2026-10-16 — Counter-force coordinate committed
 
 I took your "yes" as "commit now" and committed the counter-force change as `7dc7aae` in `vivify-operators`. The commit covers three files: the operator, the coordinate schema and the tests. It isn't pushed yet; the push can go with `/wrapup`. The unjudged blind round-trip files stayed out of the commit.
