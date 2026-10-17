@@ -1,5 +1,22 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-17 — Lean and Gemini workers
+
+The Gemini changes are committed and pushed as `a914e5e`, and memory is updated:
+- `gemini:` is now a plain worker with no search;
+- web search moved to its own route, `gemini_search:`;
+- calls now wait out rate limits.
+
+Two things are left open:
+- **Sutton steps 3 and 12 on Gemini.** These can run once the daily quota resets, in about 3 hours, or as soon as billing is on.
+- **The billing decision on the Gemini key.** It's John's, and it decides whether Gemini can do bulk reading or stays an occasional second opinion.
+
+Earlier in the same stretch: the lean Claude worker (`d3804f6`) strips the Claude Code harness from every pipeline call (~24K → 607 input tokens on a trivial prompt, and no project memory priming the instrument). A 3-reading check on 6 Sutton steps: lean vs full majority agreement 31/36, lean steadier (28 vs 24 unanimous fields), counter-force identical everywhere; one possibly real shift in schema at steps 8–10 (lean activated, full entangled). Gemini's partial read: steps 8–10 contesting, where Claude reads taken_up at 10. Free Gemini key = 20 requests/day per model.
+
+*context: after the milestone, John's usage report prompted simplified workers — a lean Claude call and a plain Gemini worker — with parity checks against the old harnessed call.*
+
+---
+
 ## 2026-10-17 — Blind round two passes
 
 The round-two files are committed and pushed as `1683292`, and the result is now in the doc (https://claude.ai/code/artifact/ac353ff3-f81a-4b53-9a87-d626bc6ad337).
