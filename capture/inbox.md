@@ -1,5 +1,19 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-18 — Worker cost split
+
+That's a useful comparison. Since the usage log started, the logged worker calls add up to about **$0.39 at list price**: the 4 checklist calls and 1 test call. That's small. So most of the jump from 11% to 17% is probably this conversation itself. Building the log took many turns, and each turn resends a long conversation. The log doesn't see that, because it only records the pipeline's own calls.
+
+`~/bin/ccusage_report.sh` reads Claude Code's own session records, so it can show what this conversation cost. Put the two side by side and we'd know the split:
+- the workers, from `usage_report.py`;
+- the main session, from ccusage.
+
+That also suggests one habit for next time: start the Gemini work in a fresh session. The summary carried over from earlier makes every turn here more expensive.
+
+*context: John watched session quota rise from 11% to 17% while the new per-call usage log showed only $0.39 of worker calls, after the account_production checklist run.*
+
+---
+
 ## 2026-10-17 — Lean and Gemini workers
 
 The Gemini changes are committed and pushed as `a914e5e`, and memory is updated:
