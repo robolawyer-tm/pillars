@@ -1,5 +1,26 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-22 — Copilot edit cleanup
+
+The report-location fix is committed and pushed to `sys_adm` as `6b7d110`, and the repo now matches `origin/main`.
+
+Everything from today is now committed and pushed:
+- **`vivify-operators`:** the Copilot edit is reverted, and the 15 session inferences are in with the rebuilt index (`7e9db74`).
+- **`sys_adm`:** three commits.
+  - `3b5a729` tracks `ccusage_report.sh` and has it read the vivify-operators usage log.
+  - `42bfa53` makes `publish_repos` take the llms.txt bundle size from the shipped bundle.
+  - `6b7d110` writes reports to `~/ccusage_reports/`.
+- **Local changes, not in git:**
+  - VS Code agent mode is off.
+  - `cli_invocations.jsonl` and Copilot's change-request notes are deleted (backups are in `~/backups/`).
+  - The three ccusage reports are together in `~/ccusage_reports/`.
+
+The only thing waiting is a `publish_repos` run to put the new inferences on the site, normally at `/wrapup`. After that, the next item in your 10-18 order is Gemini on Sutton steps 3 and 12, which is still waiting on your decision about paying for the Gemini key.
+
+*context: traced an unsigned vivify_core edit to a GitHub Copilot agent (gpt-5-mini, 2026-10-18), undid it, moved ccusage_report.sh under sys_adm, and committed the session inferences.*
+
+---
+
 ## 2026-10-18 — Worker cost split
 
 That's a useful comparison. Since the usage log started, the logged worker calls add up to about **$0.39 at list price**: the 4 checklist calls and 1 test call. That's small. So most of the jump from 11% to 17% is probably this conversation itself. Building the log took many turns, and each turn resends a long conversation. The log doesn't see that, because it only records the pipeline's own calls.
