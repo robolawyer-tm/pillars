@@ -1,5 +1,19 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-22 — Transmission fix queued
+
+The start-here note is in memory, so a new session at 9pm can pick up straight away. It covers:
+1. **The main change:** two levels for `logos.transmission`, following the social-field pattern from `575e3c6`, with the files to touch.
+2. **The structural copy:** leave `structural.transmission` in the store, but drop it from the decoder input. That way the unstable `scale` doesn't get re-voted.
+3. **The rerun:** the five field cases on transmission only (about $0.25), then a check that the new rationales describe the case, not the Innocence Project page.
+4. **The optional arm A rerun:** it needs judges, and the session should ask you whether to use web chats or automated ones.
+
+Everything from today is committed and pushed. To start tonight, open a new Claude Code session in `~/repos` and say something like "start the transmission fix". Whether to accept `account_production` is still yours to decide whenever you like.
+
+*context: after social_field got two levels (575e3c6) and the case-identity rerun passed only with the account values (v5 arm B 4/4, arm A 2/4, dfface1), the remaining telling-level leak in transmission was queued for a fresh session to save usage.*
+
+---
+
 ## 2026-10-22 — Case identity fails
 
 I've left the `act_position` change for next session and noted it in memory as where to start:
