@@ -1,5 +1,18 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-22 — Case identity fails
+
+I've left the `act_position` change for next session and noted it in memory as where to start:
+- **The change:** extend `act_position` so it records whether the source is reportage or analysis. The case-identity test (`e03c01f`) is the evidence for it.
+- **Then:** rerun the same test on Sutton and Washington to see whether the readings separate.
+- **Still undecided:** whether `account_production` counts as accepted (4.17 vs 0.5 over three draws).
+
+Everything from today is committed and pushed.
+
+*context: after the checklist draws confirmed account_production (8eb4b06), Washington passed the real-vs-shuffled blind test 4/4 (e7bbfef), and the finer case-identity test failed (e03c01f) because Washington's distinguishing coordinates describe the Innocence Project write-up rather than the case.*
+
+---
+
 ## 2026-10-22 — Copilot edit cleanup
 
 The report-location fix is committed and pushed to `sys_adm` as `6b7d110`, and the repo now matches `origin/main`.
