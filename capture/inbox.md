@@ -1,5 +1,17 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-22 — account_production accepted
+
+Committed and pushed as `8f2e0d1`, so the acceptance is now in git. `vivify-operators` matches `origin/main`.
+
+Next session has two tasks, both noted in memory:
+1. **The arm A rerun**, starting with your choice of judges.
+2. **Running `account_production` over the field store**, so the accepted coordinate is stored with the others.
+
+*context: John accepted account_production as a coordinate on the checklist gap (4.17 vs 0.5) and the v5 case-identity pass (arm B 4/4 vs arm A 2/4).*
+
+---
+
 ## 2026-10-22 — Arm A rerun queued
 
 I've noted the arm A rerun in memory as next session's task:
