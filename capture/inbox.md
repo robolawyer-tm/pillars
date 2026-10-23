@@ -1,5 +1,18 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-22 — Arm A rerun queued
+
+I've noted the arm A rerun in memory as next session's task:
+- **The build:** a new v6 builder (leaving v3 and v5 untouched), using inputs from the current store, with `structural.transmission` dropped and no account values.
+- **First step:** the session asks how you want it judged: skip it, automated judges, or your web chats.
+- **The prediction:** the readings come out nearly identical, and the judges split rather than all picking Sutton's.
+
+Everything is committed and pushed, and accepting `account_production` is still open.
+
+*context: after transmission got two levels (17dbc09: every field case's events channel is archive 3/3, Washington's broadcast moved to the telling level), the confirming arm A rerun was left for the next session.*
+
+---
+
 ## 2026-10-22 — Transmission fix queued
 
 The start-here note is in memory, so a new session at 9pm can pick up straight away. It covers:
