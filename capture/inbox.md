@@ -1,5 +1,26 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-23 — judge script committed
+
+The judge script is committed and pushed as `06c697c` on vivify-operators (`8f2e0d1..06c697c`). The commit includes `judge.py` and its test; the `GEMINI_TIMEOUT` setting in `vivify_core.py`; and the 17 verdicts in the `judged/` folders, 14 from gpt-oss and 3 from Gemini. All 21 test files pass.
+
+One correction: Gemini has 11 verdicts missing, not 10 as said earlier. Only 3 of its 14 got through before the quota ran out.
+
+Next step: after Gemini's daily reset, run its 11 missing verdicts. That leaves 9 of its 20 daily calls for v6. Then pick a tie-break judge before v6, because gpt-oss's habit of picking the first-shown reading can look like the split v6 predicts.
+
+Calibration so far (gpt-oss-120b, 14 verdicts): v5 arm B switch 4/4 and arm A no_switch match the web judges; v3 and v4 do not. On weak signal, gpt-oss picks the reading shown first.
+
+Also agreed this session:
+- Week goal: five-case identity from store coordinates, judged by the script; then add five contrast cases.
+- The week's human-facing output: a telling of each case's structure, not checklists.
+- Logos is the evolved analogical structure; empathy is the glue that evolved it.
+- A live demonstration is parked.
+- John's general framing sentence leads; legal is a second layer.
+
+*context: building and calibrating the scripted blind judge that replaces web-chat judging, alongside discussion of the week's milestone, its human-facing output and how to present the work.*
+
+---
+
 ## 2026-10-22 — account_production accepted
 
 Committed and pushed as `8f2e0d1`, so the acceptance is now in git. `vivify-operators` matches `origin/main`.
