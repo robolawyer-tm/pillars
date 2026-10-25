@@ -1,5 +1,22 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-25 — judges calibrated, Clef
+
+I'll report when Gemini's last two v6 verdicts are in. Then I'll score v6 with all four judges and write it up.
+
+Session summary (2026-10-24/25):
+- Judge calibration is done. Gemini 3.8 Flash matches the web judges on all 4 experiments and is the deciding judge. gpt-oss 2/4, Qwen 3.8 1/4. NVIDIA-hosted models (Kimi etc.) returned 404 for every account.
+- Retried 503s ("high demand") spend Gemini's free quota. `GEMINI_503_RETRIES` limits them; judge.py sets 1 (79a92cc).
+- Clef (Cloudflare's decision model) works through the native call (state + typed questions → a probability per option). Cloudflare's own assistant first gave a wrong chat endpoint. Clef is deterministic and indifferent to option order. It matched 2/4 (both misses were the Sutton record with K first, at low confidence). It is a cheap, reproducible second opinion (5defbcb).
+- v6 (coordinates only, both telling leaks closed): 14 of 16 verdicts are in, all X, so far the same reading on both records, not the predicted split. The key stays closed until Gemini's last two run after 07:05 UTC.
+- Cloudflare keys were added to keys.env.age. A stray plaintext keys.env.sav was shredded.
+- Jules was assessed as unsuitable for judging: it is a repo agent, and cloning the repo would expose the blind keys.
+- Lesson: `sleep N` does not count suspended time; wait by polling the wall clock.
+
+*context: completing the judge calibration across four model makers, adding Cloudflare's Clef decision model as a judge, and running the v6 coordinates-only identity test.*
+
+---
+
 ## 2026-10-23 — judge script committed
 
 The judge script is committed and pushed as `06c697c` on vivify-operators (`8f2e0d1..06c697c`). The commit includes `judge.py` and its test; the `GEMINI_TIMEOUT` setting in `vivify_core.py`; and the 17 verdicts in the `judged/` folders, 14 from gpt-oss and 3 from Gemini. All 21 test files pass.
