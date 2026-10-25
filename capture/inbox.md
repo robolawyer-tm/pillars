@@ -1,5 +1,29 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-25 — Clef structured state
+
+The commit is pushed as `190294f`; all tests pass. Only the blind v6 folder stays uncommitted.
+
+On the Cloudflare agent's reply: its main point rests on a misreading, partly caused by how I worded my last message.
+
+- **What 0.0005 was:** the difference between Clef's P(X) on the *Washington* record (0.8793) and on the *Sutton* record (0.8788), not the gap between X and Y. On each record, X is 0.879 and Y 0.121, a gap of about 0.76. So Clef did pick X, firmly, on both records.
+- **What that means:** Clef gives the same answer whichever case it holds, so it finds no case-specific signal. That is the "same reading on both records" pattern, and `judge.py` already reports it as `no_switch`. A per-pick gap rule wouldn't catch it, because each pick has a large gap; it only shows when the two records are compared.
+- **Its gap-based abstention rule adds nothing here.** With two options, the gap is just 2p − 1, the same information as the probability.
+
+Worth taking from it:
+- Log disagreements between Gemini and Clef, with Clef's probability beside Gemini's reasons. A small addition to `score`, to do when first needed, probably at v6.
+- Flash's weak result is recorded as a negative finding.
+
+Its two offers:
+1. Drafting a Claude Code prompt for a "production harness": not needed; `judge.py` already is that harness.
+2. Moving the Clef calls into a Cloudflare Worker: not now. The token is handled locally in the sealed keys file, which fits the local-first rule; a Worker belongs to the Dynawrkrs track.
+
+Session result: Clef with the state as labelled JSON fields matches the web judges 4/4, the second calibrated judge after Gemini. Both reading orders give identical probabilities. The variant was chosen after seeing the misses, so v6 is its first held-out test. clef-flash: 2/4. publish_repos now publishes only git-tracked files (sys_adm 1c1b142), after a dry run caught the blind v6 key about to go public.
+
+*context: testing Cloudflare's suggestions (structured JSON state, clef-flash) after the first Clef calibration, and answering its support assistant's follow-up.*
+
+---
+
 ## 2026-10-25 — judges calibrated, Clef
 
 I'll report when Gemini's last two v6 verdicts are in. Then I'll score v6 with all four judges and write it up.
