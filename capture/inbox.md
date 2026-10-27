@@ -1,5 +1,13 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-27 — CourtListener and key hygiene
+
+Parked to project_public_exposure_audit.md — making sys_adm public.
+
+*context: session wired the CourtListener MCP (user scope, header `Token ${COURTLISTENER_API_TOKEN}` from ~/.env), stripped all LLM keys out of ~/.env into the sealed keys.env.age only, blanked plaintext key copies in backups/history/log, found a stray live Google key (…eY-w) to revoke, parked a new AI Studio Gemini key, confirmed sys_adm has no secrets in any of its 33 commits, and parked making it public.*
+
+---
+
 ## 2026-10-25 — Clef structured state
 
 The commit is pushed as `190294f`; all tests pass. Only the blind v6 folder stays uncommitted.
