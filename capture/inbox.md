@@ -1,5 +1,15 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-28 — family identity rounds
+
+I pushed `5b9dceb` to `main` on robolawyer-tm/vivify-operators.
+
+The repo now names the four PA family cases in `judge.py`, as short labels like `carrero-v-lopez`. They are published decisions, so that fits your rule that public court decisions are fine to publish. No case text went into the repo; it stays in `~/private_field`.
+
+*context: closing the family identity check: fam1 (no bond) 1/4, fam2 (+bond) 4/4 leaked via ages/places, fam3 (roles stripped) 4/4 both judges; judge.py rounds committed and pushed.*
+
+---
+
 ## 2026-10-27 — CourtListener and key hygiene
 
 Parked to project_public_exposure_audit.md — making sys_adm public.
