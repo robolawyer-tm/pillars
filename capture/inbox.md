@@ -1,5 +1,27 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-30 — Canadian bond test drive
+
+The run is paused at 54 of 73 Canadian cases. No workers are left running, all 73 records are intact, and none of the 5 cases that were in progress were saved. The script skips finished records, so it picks up where it stopped. After your usage resets, restart it with:
+
+```
+cd ~/private_field/family/canada/a2aj && ./run_bond.sh > bond.log 2>&1
+```
+
+That covers the remaining 19, including the two over-length records, which now go through on stdin.
+
+I rebuilt the report on the 54 finished cases (`canada/a2aj/REPORT.md`) without any model calls:
+
+- **Overall:** 55% of cut or reduced events were not weighed, against 71% in Pennsylvania and 78% in New Brunswick. In 21 of the 48 cases with a cut, most cuts were not weighed.
+- **By court:** BCCA 69%, NSCA 64%, NLCA 52%, ONCA 48%.
+- **Self-represented vs both with lawyers:** the gap shrank to 61% vs 53%. At 10 cases it was 76% vs 28%, so most of that early gap came from a few BC cases.
+- **Changes the family members made themselves:** 89% (33/37) were not weighed, against 48% for changes the court or another institution made. This is the biggest gap in the report, and it fits the point that families' own arrangements sit outside the court's frame.
+- **Dropped events:** 16 of 459 events had fewer than 3 votes and were left out, probably from calls cut short by the 2026-10-29 usage limit; confirm once the run is finished.
+
+*context: Canadian (A2AJ) bond test drive on custody appeals, resumed after a stdin fix for over-length opinions (2168c06) and paused at 70% usage.*
+
+---
+
 ## 2026-10-28 — family identity rounds
 
 I pushed `5b9dceb` to `main` on robolawyer-tm/vivify-operators.
