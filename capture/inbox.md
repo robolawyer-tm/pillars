@@ -1,5 +1,24 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-30 — family gate met
+
+The `fam4` experiment is committed and pushed to `vivify-operators` on main as `000e77f`. Local and remote match, and memory is updated. The readings, verdicts and key stay in `~/private_field/family/identity_same/`, outside git.
+
+Commits pushed in this session:
+
+| Commit | What it does |
+|---|---|
+| `2168c06` | Long prompts go to `claude -p` on stdin |
+| `31745c8` | Bond refuses to save events with missing votes |
+| `bd84ab5` | `read_json` fails loudly on a missing file |
+| `000e77f` | `fam4`: the same-composition identity test |
+
+The family milestone gate is met. The next phase is theory, starting with the gap found tonight: cuts the family arranged itself being left unweighed. Start that in a fresh session.
+
+*context: Family-court track: Canadian bond run finished (73 cases), three-way comparison and members-made hand check written, recall test 6/6 and same-composition identity 4/4 closed the "tooling confident" gate.*
+
+---
+
 ## 2026-10-30 — Canadian bond test drive
 
 The run is paused at 54 of 73 Canadian cases. No workers are left running, all 73 records are intact, and none of the 5 cases that were in progress were saved. The script skips finished records, so it picks up where it stopped. After your usage resets, restart it with:
