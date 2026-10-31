@@ -1,5 +1,28 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-10-31 — cheaper-model trial for bond
+
+The agreement check is done. Gemini matches Opus on the overall not-weighed rate, but not on individual cases.
+
+| Measure | Result |
+|---|---|
+| Pooled not-weighed rate | Opus 24/49 (49%), Gemini 26/49 (53%) |
+| Cut events landing on the same side (weighed vs not weighed) | 43 of 49 |
+| Exact agreement on weighed / mentioned / absent | 56 of 104 (most differences are mentioned vs absent) |
+| Case shares | 7 of 12 identical; 5 differ by 0.2–0.5 |
+
+Two of the five differing cases move by 0.5, more than Opus's own run-to-run spread of about ±0.25.
+
+- The split is fine for pooled rates, not for per-case numbers or anything that separates "mentioned" from "absent".
+- At $3 of Gemini credit left, a bulk run on the split doesn't fit (100 cases ≈ 300 long Gemini calls).
+- Pipeline Gemini use since 10-27 is about 1M input / 0.5M output (mostly thinking), probably only part of the $5 spent; the Google billing page would show the rest.
+- Opus stays the default everywhere. The split (`e994103`, `VIVIFY_MODEL_OVERRIDE=bond_registered=gemini:gemini-3.8-flash`) is ready if credit is topped up for cheap pooled rates over a big pool.
+- Screen before it: known answers Opus 75/75, Sonnet 70/75, Gemini 75/75; recall Opus 6/6, Sonnet 6/6, Gemini 5/6. Thinking cannot be switched off through `claude -p`.
+
+*context: After the family gate was met, webface efficiency suggestions led to measuring bond's cost, a stdin speed fix, and a cheaper-model trial that ended in an Opus-finds / Gemini-votes split usable only for pooled rates.*
+
+---
+
 ## 2026-10-30 — family gate met
 
 The `fam4` experiment is committed and pushed to `vivify-operators` on main as `000e77f`. Local and remote match, and memory is updated. The readings, verdicts and key stay in `~/private_field/family/identity_same/`, outside git.
