@@ -1,5 +1,13 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-02 — per-tie bond effects
+
+Pushed: `d30e101` is on `origin/main`, and it contains only `bond_operator.py` and `tests/test_bond.py`. The results and records stay private in `~/private_field`, and the 11 untracked session inferences in the repo weren't included.
+
+*context: step 4 of bond (effect per tie) passed T1-T3 on all 117 cases, R10 withdrew R9's loss reading at 88%, and the not-weighed headline held at 57%.*
+
+---
+
 ## 2026-10-31 — cheaper-model trial for bond
 
 The agreement check is done. Gemini matches Opus on the overall not-weighed rate, but not on individual cases.
