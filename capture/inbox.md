@@ -1,5 +1,19 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-03 — tie-level prose aligned
+
+The tie readings now claim only what passed its tests. That took one model call.
+
+- Tie-level only: whether the reasoning weighs each relationship (passed the fresh check at 93%); no claim about whether any single event was weighed (event-level withdrawn).
+- No vote counts in the text; a relationship is called weighed or not only when all three votes agree, otherwise split.
+- "Restored" without an earlier cut is written as an increase.
+- 2021 ONCA 75 regenerated: trace check clean (4/4 quotations, all tags real); the "stability ignored" line is gone.
+- Usable now: tie-level description (25% of parent ties, about two-thirds of other ties not weighed, replicated on 20 fresh cases) and the generated tie readings as a draft form; public version in John's words.
+
+*context: end of a session that built tie-level registered (bond step 5), tested event-level weighing blind on 20 fresh appeals (withdrawn), passed tie-level on the same cases, and aligned the generated tie readings.*
+
+---
+
 ## 2026-11-02 — judicial information organization
 
 Parked to project_family_court_goal.md — judicial information organization
