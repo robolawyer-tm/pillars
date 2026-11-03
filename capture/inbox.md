@@ -1,5 +1,13 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-02 — judicial information organization
+
+Parked to project_family_court_goal.md — judicial information organization
+
+*context: session ran after-harm source checks (DVDRC, OCYA reading of 13, follow-up data, data gap), K1 failed, and John parked a plan to suggest the information organization family courts need to adapt.*
+
+---
+
 ## 2026-11-02 — per-tie bond effects
 
 Pushed: `d30e101` is on `origin/main`, and it contains only `bond_operator.py` and `tests/test_bond.py`. The results and records stay private in `~/private_field`, and the 11 untracked session inferences in the repo weren't included.
