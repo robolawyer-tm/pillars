@@ -1,5 +1,19 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-07 — agent_account usage
+
+`agent_account` is the script that sets up and polices ChatGPT's login; every form runs under `sudo`.
+
+- `sudo agent_account -e 2027-01-01 chatgpt pillars robolawyer-tm.github.io vivify-operators`: create or refresh the login, set its expiry, grant read-only on those repos, clone them into /home/chatgpt/work (existing clones left alone, not updated), copy in AGENTS.md/tasks/sources from ~/agent_accounts/chatgpt/, re-lock the rest of ~, then run the checks; safe to re-run
+- `sudo agent_account -v chatgpt`: checks only, changes nothing; granted repos readable and not writable, nothing else in ~ or ~/repos reachable, no general sudo, expiry shown
+- `sudo agent_account -r chatgpt <repo>`: revoke read on a repo; the clone in /home/chatgpt/work stays and must be deleted by hand
+- `sudo agent_account -n ...`: dry run of any of the above, prints each step without doing it
+- Next session: deep read of 2011 BCSC 1084, asking of each wider-family tie whether it is contested, voiced, or settled background (after DEEP_READ_2007BCSC594.md)
+
+*context: John asked what the four agent_account commands do, and chose a fresh session for the 2011 BCSC 1084 deep read.*
+
+---
+
 ## 2026-11-07 — plan for remaining usage
 
 With 70% left, here's what I'd do. The aim is to spend your usage on understanding, not on paid runs or a long context.
