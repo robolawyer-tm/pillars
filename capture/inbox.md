@@ -1,5 +1,25 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-07 — plan for remaining usage
+
+With 70% left, here's what I'd do. The aim is to spend your usage on understanding, not on paid runs or a long context.
+
+**1. Start ChatGPT on task 01 now.** Its work runs on its own sign-in, not your Claude allowance, and it's ready to go. First refresh its brief (`sudo agent_account -e 2027-01-01 chatgpt pillars robolawyer-tm.github.io vivify-operators`), then `sudo -iu chatgpt`, `cd ~/work`, "Read AGENTS.md, then do tasks/chatgpt_task_01_founding_ideas.md". When it's done, compare its `founding/` pages against the 45-idea list; that also shows whether it's good at documentation.
+
+**2. Wrap up this session.** It's very long now, and every call re-reads all of it, so a fresh session does the same work for less.
+
+**3. Fresh session: read for "voice", about 10–20% of usage.** Read 2007 BCSC 594 and 2011 BCSC 1084 closely. For each wider-family tie: did someone on it have a voice in the case, and does that explain why the tie stayed in later decisions or dropped out? No model calls. If the idea holds, write a voice prediction (V1) before anyone looks at chains 31 onwards. The estimate is rough; chain length unchecked.
+
+**4. Keep about 30% in reserve.** No paid chain run until V1 is written and adopted; the spend cap (`VIVIFY_BUDGET_USD`) is committed, so a run can be capped.
+
+Running alongside at no cost: John reads "The Living Model" and sections 1–3, and ticks ideas off on the Founding Writing Map as he writes them.
+
+Open question for John before the fresh session: does "voice" match what he has seen in these families?
+
+*context: end of a session that set up a read-only chatgpt account (agent_account), a concepts bundle (make_ingest -p concepts), a 45-idea humanizing list and the Founding Writing Map artifact, and stepped back on the family-court theory after FK failed.*
+
+---
+
 ## 2026-11-03 — tie-level prose aligned
 
 The tie readings now claim only what passed its tests. That took one model call.
