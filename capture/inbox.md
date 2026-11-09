@@ -1,5 +1,13 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-09 — over-purposed tech
+
+- yes this good, "narrow the purpose" is something I think about a lot, that over-purposed tech (for marketing) can't be applied elsewhere when it easily could
+
+*context: John's idea that a different LLM needs vivify to organise outreach, since every pipeline and theory item applies to every group and only the telling differs per audience; the risk named was an audience-writing LLM narrowing the purpose.*
+
+---
+
 ## 2026-11-08 — drop-out deep read
 
 All three chains are read, and the result is clear. **None of the 10 relatives' ties that left the record had ended.** All 10 left because the next decision was a narrow ruling.
