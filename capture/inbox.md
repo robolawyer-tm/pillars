@@ -1,5 +1,13 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-08 — C1 contest test closed
+
+C1 left at INCONCLUSIVE by John's decision (2026-11-08): contested ties too rare (11 of 45) and wider-family drop-out barely occurs in fresh chains (84% PRESENT); contest remains a deep-read reading from 2007 BCSC 594 and 2011 BCSC 1084, not a tested claim.
+
+*context: deep read of 2011 BCSC 1084 supported CONTEST over VOICE; John adopted C1, a blind run on chains 31-40 ($8.27) came back inconclusive.*
+
+---
+
 ## 2026-11-07 — agent_account usage
 
 `agent_account` is the script that sets up and polices ChatGPT's login; every form runs under `sudo`.
