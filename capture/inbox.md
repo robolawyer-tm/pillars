@@ -1,5 +1,38 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-08 — drop-out deep read
+
+All three chains are read, and the result is clear. **None of the 10 relatives' ties that left the record had ended.** All 10 left because the next decision was a narrow ruling.
+
+**Chain 3: 2023 BCSC 572 (V.K.W.W. v. K.A.M.G.)**
+- **2023:** restored the father's unsupervised, then equal, time after abuse allegations the court found unproven.
+- **2024:** reworked the schedule around the mother's new job.
+- **2026:** dealt with logistics only: transfer supervisors, phones, extracurricular activities, counselling, make-up time. It names no relative.
+- **Paternal grandmother:** she entered through an expert. The girls said they missed "their dad and their grandmother", and she was ordered to supervise the father's visits, over the mother's objection. In 2024 she was still contested: the father uses her for childcare in his time, and the mother won't have her in hers. The order makes each parent arrange their own care, which places her inside the father's time. In 2026 she's gone by name.
+- **The two sisters:** never separated and never at issue.
+
+**Verdict against the bar written in advance**
+- **Ended:** 0 of 10. **Narrow decision:** 10 of 10.
+- The bar (at least a third ended) isn't met. By the rule we set, "present or absent in the next decision" **is retired as a sign of loss.** It measures what the next hearing was about.
+- From now on, FP1, FK and C1 carry a caveat wherever they're quoted: drop-out tracks the scope of the later hearing, not loss of the tie.
+- These three chains had the highest drop-out rates, so they were the strongest case for loss, and they still showed none.
+
+**What the reading found instead**
+- In all three families, the relative the parents fought over was a **paternal grandmother** (in one, both grandparents). In two of them, the mother objected to her directly.
+- Each time, the court settled it by giving time or care duties to **the father**: ranch and cultural visits, care while he travels, care within his own time. It never gave the grandmother anything in her own right.
+- After that, the record follows the father, and she disappears by name. I've called this ABSORBED, and it applies to 5 of the 10 ties. It fits the contest reading from the two earlier close reads.
+- **A reform reading, for you to weigh:** a relative's tie that the court protects only through a parent's time depends entirely on that parent, and leaves no trace that a later court or researcher can follow.
+
+**Limits:** 3 families, one reader, and not blind. Every later decision here happened to be narrow, which may not hold for chains that go back to a full trial.
+
+**Possible next step (not adopted):** code whether each later decision is a full parenting rehearing or a narrow application, and measure drop-out within full rehearings only. If relatives' ties still disappear there, that would be the loss signal the narrow rulings were hiding.
+
+The write-up is in `~/private_field/family/theory/DEEP_READ_DROPOUT.md`, and the result is recorded in `PREDICTIONS.md` (backed up first) and in memory. All of it cost nothing in model calls.
+
+*context: deep read of the three highest drop-out follow-up chains (2015 BCSC 1412, 2008 BCSC 1156, 2023 BCSC 572) to test whether wider-family ties leaving the record had ended.*
+
+---
+
 ## 2026-11-08 — C1 contest test closed
 
 C1 left at INCONCLUSIVE by John's decision (2026-11-08): contested ties too rare (11 of 45) and wider-family drop-out barely occurs in fresh chains (84% PRESENT); contest remains a deep-read reading from 2007 BCSC 594 and 2011 BCSC 1084, not a tested claim.
