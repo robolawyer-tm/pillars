@@ -1,5 +1,15 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-11 — ctrl-Z launcher fix
+
+I committed the Ctrl+Z fix to `sys_adm` as `7bd3bc0` and pushed it, so your local copy and GitHub now match. The commit has only `claude_terminal` in it.
+
+Background: the 2026-09-16 fix never worked. bash turns job control off while reading --init-file, so claude ran in an orphaned process group and its SIGTSTP was discarded ("suspended" printed, `fg` reached nothing). `set -m` before `claude` in the rc fixes it (verified stop + fg in a pty). The two stuck windows were sent `kill -CONT`.
+
+*context: repairing the claude_terminal launcher after two sessions in NYC were lost to Ctrl+Z.*
+
+---
+
 ## 2026-11-09 — over-purposed tech
 
 - yes this good, "narrow the purpose" is something I think about a lot, that over-purposed tech (for marketing) can't be applied elsewhere when it easily could
