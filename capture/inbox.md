@@ -1,5 +1,21 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-14 — far-side residence run
+
+Steps 1-2 are coded for opinions 42–65. That covers all 66 fetched opinions so far: 92 coded rows, 56 usable ties.
+
+- One appellate leak: in [62], a move sentence said the factors were "wrongly balanced", which gives away the appeal result before Step 3. The mask doesn't catch that phrasing.
+- Trial-level leaks: trial findings showed in relative sentences in [42], [49] and [56]; Step 3 codes the result after the appeal anyway.
+- Set apart: [46] the mover was a half-sister, not a parent; [47] the grandmother claims the caretaker role; [59], [63], [64] every relative sentence masked.
+- Judgment call in [49]: maternal grandparents about 1.5 hours from the origin counted as the same area.
+- Before-order residence was unclear in 9 of 66 opinions, coded "?" and reported apart.
+
+The fetch resumes when CourtListener's block lifts (about 23:40); Step 3 waits until all 228 have Steps 1-2 and the file is locked.
+
+*context: running DRAFT_FAR_SIDE_RESIDENCE.md (adopted 2026-11-13) — side-at-far test with residence coded, on the unread 228 US relocation opinions; positional frame rebuild failed (search unstable), pool = frame minus the 150 read.*
+
+---
+
 ## 2026-11-11 — ctrl-Z launcher fix
 
 I committed the Ctrl+Z fix to `sys_adm` as `7bd3bc0` and pushed it, so your local copy and GitHub now match. The commit has only `claude_terminal` in it.
