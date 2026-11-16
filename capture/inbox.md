@@ -1,5 +1,19 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-16 — codex output check
+
+No, nothing has landed: there is no `/home/chatgpt/work/observations/` directory, and no file anywhere under the workspace has been written since the run started on 14 November.
+
+- **Codex is still open:** a `codex` session and its background service are running under the `chatgpt` login, started that evening. So the terminal is alive, but it has produced no output file in two days.
+- **Last activity:** the snapshot folder was last touched at 22:06 on 14 November, which is about when the prompt went in.
+- **What I can't see:** the `chatgpt` home directory is closed to me, so I can't read Codex's own session log to tell whether it finished and wrote somewhere else, stopped on a question, or was never sent the prompt.
+
+The likeliest causes are that Codex is waiting on an approval prompt in that terminal (for example, permission to create the directory or write outside the repo), or that the prompt was pasted but not submitted. Looking at the `chatgpt` terminal will tell you which.
+
+*context: end of the session that finished the far-side residence test (side fails at far distance, 6% against 19% on left-behind ties; side closed for relocation) and then checked whether the Codex observer run had produced its file.*
+
+---
+
 ## 2026-11-14 — far-side residence run
 
 Steps 1-2 are coded for opinions 42–65. That covers all 66 fetched opinions so far: 92 coded rows, 56 usable ties.
