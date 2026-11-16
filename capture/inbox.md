@@ -1,5 +1,18 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-16 — bundle and publish
+
+Both ran cleanly.
+
+- **Ingest bundle:** rebuilt as `/home/john/ingest_out_files/vivify_ingest_small_2026-11-16.md`, 488K (about 124K tokens), with its index file. It covers the five field inferences with raw text stripped, and the bundle from 2 November was pruned.
+- **Website:** `publish_repos` finished, including the bundle index and `llms.txt` at https://wholesystemsmodel.org/llms.txt.
+
+I did not open the live pages to confirm the new code is showing; the publish output reported no errors.
+
+*context: close of the session that applied four fixes from an AI Studio Gemini code reading to vivify-operators (short votes never unanimous, partial tagging manifest, bond sub-passes gated, quote punctuation folded; commit a1d26b4), then rebuilt the bundle and republished.*
+
+---
+
 ## 2026-11-16 — codex output check
 
 No, nothing has landed: there is no `/home/chatgpt/work/observations/` directory, and no file anywhere under the workspace has been written since the run started on 14 November.
