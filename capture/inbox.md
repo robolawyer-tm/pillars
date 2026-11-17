@@ -1,5 +1,18 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-17 — face instance parked
+
+A second Claude Code instance for the human-facing work, acting as a buffer against data pollution, is parked as an alternative to onboarding Codex for that role.
+
+- Why Claude over Codex for it: phone access, recording, /wrapup, skills, copy and paste and the project's standards all carry over; Codex stays the candidate for the parked "third judge" role, where a different vendor's view is the point.
+- Buffer: its own workspace (the reserved dimensional-fields repo), its own memory and CLAUDE.md; it reads the instrument's outputs but never writes to vivify-operators, private_field or Claude's memory; it hands work back through one folder that Claude treats as an outside view.
+- Open choice: run it as John (quick, buffer by instruction only) or in its own Linux account via agent_account (recommended: the operating system enforces the buffer).
+- Cost: roughly double subscription use when both instances are busy.
+
+*context: John found Codex onboarding slower than expected and floated a second Claude instance for the human face; proposal written, then parked.*
+
+---
+
 ## 2026-11-17 — Claude-Codex channel parked
 
 The direct Claude↔Codex channel is parked with the rest of the Codex/T3 work and is listed as the next Codex step.
