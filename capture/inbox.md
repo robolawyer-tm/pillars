@@ -1,5 +1,22 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-17 — llm-exchange and Codex Drive access
+
+Codex can now exchange files with Google Drive without ever holding the Drive key; the shared folder is renamed `llm-exchange`.
+
+- `drive_exchange` (sys_adm, deployed to ~/bin) copies Codex's `~/output/` to Drive `llm-exchange/codex/` and pulls `llm-exchange/to_codex/` into Codex's `~/work/inbox/`.
+- Fixed paths, copy only (never deletes), symlinks skipped, 50 MB cap, logged to `~/logs/drive_exchange.log`.
+- Codex's sandbox forbids `sudo`, so the sudo rule cannot work from inside Codex; the answer is John's crontab running push and pull every 5 minutes (command given; John installs it).
+- First push done by hand: `logos_map_humanized.md` and `founding_conversation.md` are on Drive for Cowork.
+- `claude-exchange` renamed to `llm-exchange` (it serves Claude, Codex and Cowork); README updated, old copy in `save/`.
+- Not given: rclone itself to Codex. A Drive token covers the whole Drive, which holds affidavits, separation material, taxes and finances.
+- Still due: rclone's shared Google client ID retires during 2026; John needs his own client ID or the exchange stops.
+- Copy and paste from the Codex terminal fails even without our changes; Claude can read Codex's session logs directly instead.
+
+*context: John wanted Codex's humanized logos map readable by Cowork, then asked for Codex to have Drive capability and for the exchange folder to carry a model-neutral name.*
+
+---
+
 ## 2026-11-17 — Busemeyer & Bruza parked
 
 Parked in memory as a candidate for the logos side, as John asked; it came from his conversation with Claude Cowork.
