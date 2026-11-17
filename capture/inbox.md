@@ -1,5 +1,19 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-17 — Tailscale parked under star-bridge
+
+The Tailscale note now sits under the parked star-bridge memory ("Animal Crossing"); the Codex note points there, and T3 waits on that decision.
+
+- Tailscale already does two of the four Animal Crossing ideas: devices find each other anywhere with no IP drift, and connections use names, with SSH still underneath.
+- It might also replace the sketched registry on the hotspot phone and `mount_windows_mnt --scan`.
+- Phone 1 is the vault demo (DO NOT TOUCH), so installing the Tailscale app there needs John's explicit go-ahead; Termux ssh and the vault over the tailnet are untested.
+- Conditions and opinion unchanged: an accepted dent in local-first (Tailscale's cloud sees who connects to whom, not the content), identity separate from robolawyer-tm GitHub, access rules limiting each device to the ports it needs, Tailscale SSH off.
+- Also parked this session: the Codex harness (staged in sys_adm/codex_harness, not installed), T3 Code for Codex phone chat, and the Fragile Families study as a non-court test of the distance and absorbed-ties findings (read data-use terms first; local-only until then).
+
+*context: John's laptop-wide connectivity decisions after finding Codex lacks phone access; Tailscale reclassified from a Codex fix to a star-bridge transport candidate.*
+
+---
+
 ## 2026-11-16 — bundle and publish
 
 Both ran cleanly.
