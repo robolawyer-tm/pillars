@@ -1,5 +1,19 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-17 — public Drive subfolder
+
+`llm-exchange/public/` is the only public part of the Drive exchange: anyone with the link can view, only John can edit, and it is empty until files are placed there by hand.
+
+- Link: https://drive.google.com/open?id=1HrMfMve75QwS_rmoUomY1QePHjcN7J3a
+- Permissions checked on Google's side: `public/` = anyone-with-link viewer; `llm-exchange` itself stays owner-only.
+- Why not the whole folder: `inbox/` is meant for statements and scans, Codex output arrives automatically every 5 minutes, the folder is mirrored to the Windows laptop, and edit access would let strangers write into Codex's inbox.
+- Cowork and AI Studio already read Drive through John's own account; public only helps unauthenticated readers and people John sends the link to.
+- Rule: by hand, after John has looked; treat it like the website. README updated, previous copy in `save/`.
+
+*context: John asked whether the Drive exchange folder could go public; the answer was a single hand-fed, view-only subfolder.*
+
+---
+
 ## 2026-11-17 — llm-exchange and Codex Drive access
 
 Codex can now exchange files with Google Drive without ever holding the Drive key; the shared folder is renamed `llm-exchange`.
