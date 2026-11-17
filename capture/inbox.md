@@ -1,5 +1,21 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-17 — codex_terminal installed
+
+Claude's `codex_terminal` now sits in `/home/chatgpt/bin/` and `~/bin` is on chatgpt's PATH; the first real launch has to come from the chatgpt login.
+
+- The file still belongs to chatgpt; Codex's own version is backed up at `~/backups/chatgpt_home/bin/`.
+- Without tmux it records the current terminal with `script -f` into `~/logs/codex/`; extra words such as `resume` pass through to Codex.
+- It starts in `~/work/vivify-operators`, where the 2026-11-14 conversation lives, so `resume` should list it; title and navy background kept.
+- `.profile` already added `~/bin` for login shells; `.bashrc` now adds it for ordinary terminal windows too; both checked.
+- Not installed: tmux (no phone joining yet), tmux settings, global `AGENTS.md`; `sudo apt install tmux` later switches to the shared session.
+- Found: Codex's built-in memory database is empty, and its `wrapup` skill, written to save what it learned, never ran (`notes/continuity/` absent). The conversation itself is intact on disk.
+- First use: `codex_terminal resume`, pick yesterday's conversation, ask Codex to run its own `wrapup`.
+
+*context: John asked why Codex kept no learning from an extensive conversation, then had Claude's codex_terminal installed for the chatgpt user.*
+
+---
+
 ## 2026-11-17 — Codex persona parked
 
 The whole Codex setup is parked until John reopens it; his read-and-write access to Codex's home stays, so nothing needs undoing.
