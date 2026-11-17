@@ -1,5 +1,13 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-17 — Codex sandbox scope
+
+I am reading that codex can be opened up to the web and I can adjust the scope of filesystem availability in the toml file
+
+*context: Codex's sandbox blocked sudo and network, so Drive access runs from John's side (drive_exchange plus private links written to Codex's inbox); two reviewed Codex files were moved to the public Drive folder; John is now looking at widening Codex's sandbox in its config.toml instead.*
+
+---
+
 ## 2026-11-17 — public Drive subfolder
 
 `llm-exchange/public/` is the only public part of the Drive exchange: anyone with the link can view, only John can edit, and it is empty until files are placed there by hand.
