@@ -1,5 +1,21 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-17 — Busemeyer & Bruza parked
+
+Parked in memory as a candidate for the logos side, as John asked; it came from his conversation with Claude Cowork.
+
+- Busemeyer & Bruza, *Quantum Models of Cognition and Decision* (2012): human judgment modelled with quantum, not classical, probability (order effects, context, systematic "irrational" answers).
+- Not used anywhere in the project before today.
+- Possible home: the logos map's open "grammar" section, as a formal way to describe non-determinate, context-bound meaning.
+- Naming clash: the draft AGENTS.md uses "entanglement" for bonds; in their work it is a formal, testable term. Adopt it properly or rename ours.
+- Nothing built or admitted.
+
+Also this round: the ten older-site ideas Codex listed (four layers from drives to institutions; drives hidden inside principles; convergence without coordination; polarization and "rabbit ears"; extremes exposing drives; documents carrying human signals; art beneath argument; benefit as seeing a next step; accumulated intuition (YTDMSP); purpose left open). Items 2, 6 and 7 match the thin and empty parts of the logos map. Codex task 02 (humanize the logos map) is written in its workspace, waiting for John to hand it over.
+
+*context: John asked for the ten robolawyer-site ideas and whether the project uses Busemeyer and Bruza, then parked them as a logos-side candidate.*
+
+---
+
 ## 2026-11-17 — logos map, LLM evolution
 
 this is good because it shows LLM evolution
