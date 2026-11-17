@@ -1,5 +1,19 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-17 — Claude-Codex channel parked
+
+The direct Claude↔Codex channel is parked with the rest of the Codex/T3 work and is listed as the next Codex step.
+
+- Gemini's claim was partly wrong: T3 Code has no built-in channel for this; community add-ons (t3-mcp, t3code-mcp) let Claude drive a running T3.
+- Codex itself can act as a server Claude connects to (`codex mcp-server`, possibly replaced by the "Codex App Server"; check the installed version).
+- Design rule: Codex (or T3) runs in the chatgpt account and listens on the laptop only; Claude connects to it and never launches Codex as John, which would give it John's files and send what it opens to OpenAI.
+- "Shared memory" means a shared notes folder, never Claude's memory folder: another agent's writes there would read later as Claude's own conclusions.
+- This replaces the Drive timer as the transport for the parked "Codex as a third judge" step.
+
+*context: Gemini suggested T3 Code as a way for Claude to message Codex directly; checked against T3 and OpenAI documentation, then parked with a design rule.*
+
+---
+
 ## 2026-11-17 — Codex sandbox scope
 
 I am reading that codex can be opened up to the web and I can adjust the scope of filesystem availability in the toml file
