@@ -1,5 +1,18 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-17 — Codex persona parked
+
+The whole Codex setup is parked until John reopens it; his read-and-write access to Codex's home stays, so nothing needs undoing.
+
+- John's account now has read and write access to everything under /home/chatgpt (inherited by new files); Codex's login token stays closed; verified.
+- Files Claude creates there belong to John's account, so the harness still goes in through the sudo installer.
+- Parked: harness (sys_adm/codex_harness, uncommitted), tmux install, T3 Code, phone access; Tailscale sits under star-bridge.
+- Reason (John): the Codex "persona" installation is not as simple as first thought.
+
+*context: John, near the laptop briefly while in NYC, granted access so Codex-side work could continue from the phone, then parked the whole Codex setup.*
+
+---
+
 ## 2026-11-17 — Tailscale parked under star-bridge
 
 The Tailscale note now sits under the parked star-bridge memory ("Animal Crossing"); the Codex note points there, and T3 waits on that decision.
