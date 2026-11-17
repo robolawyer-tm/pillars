@@ -1,5 +1,13 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-17 — logos map, LLM evolution
+
+this is good because it shows LLM evolution
+
+*context: John corrected "felt" (a valid face of logos; the error was LLMs reading logos as felt only, as they did when he began the construct), then had Claude write pillars/logos/LOGOS_MAP.md: logos as the dictionary of life — social organization (built), emotion and body language (thin), nature/science and the senses (empty), grammar (open).*
+
+---
+
 ## 2026-11-17 — codex_terminal installed
 
 Claude's `codex_terminal` now sits in `/home/chatgpt/bin/` and `~/bin` is on chatgpt's PATH; the first real launch has to come from the chatgpt login.
