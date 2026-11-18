@@ -1,5 +1,18 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-18 — johnbessa.info polish
+
+No, the memory limit isn't a reason to restart.
+
+- **The memory limit is about one file, not this conversation.** It applies to the memory index, which is loaded at the start of every session and stops being read past a certain size. I've already shortened it to 17.3 KB, under the target, so it's fine.
+- **This conversation has its own limit,** and that's handled automatically: when it gets long, older parts are summarised and work carries on.
+
+You've told me before that you prefer fresh sessions over long ones, to keep usage down. The website work is finished and the rebuild idea is saved, so this is a natural point to start a new session for whatever comes next. If you'd like to run `/wrapup` first, it will capture this session the usual way.
+
+*context: Session fixed johnbessa.info (click-to-zoom with crosshair, always-visible thumbnail scroll bar, hover preloading, viewing pane fills the column height with sharper 1100x800 copies), built the add_photos command (sys_adm 0d9a8bd), and parked a rebuild as plain gallery folders + a simple config per gallery from the Windows originals.*
+
+---
+
 ## 2026-11-18 — pre-reboot check
 
 The laptop had been up 12 days, so we checked whether a reboot was safe; it is.
