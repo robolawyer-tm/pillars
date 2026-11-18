@@ -1,5 +1,18 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-18 — pre-reboot check
+
+The laptop had been up 12 days, so we checked whether a reboot was safe; it is.
+- The three Claude Code sessions in the list are old peer sessions, all idle; this session started no agents and no throttled data is pending.
+- Every repo has its commits pushed; what remains uncommitted is long-standing untracked material (pdfs, notes, session inferences), safe on disk.
+- Two Codex sessions are running under chatgpt; the codex_terminal one has been recording all along through script -f, and both come back with `codex resume`.
+- No claude -p jobs, no rclone transfers, no store runs; the drive_exchange crontab is not installed yet, so nothing scheduled is interrupted.
+- After the reboot: start Codex again with `codex_terminal resume` in the chatgpt account (tmux is still not installed, so it records in the window it runs in).
+
+*context: John asked whether to reboot after 12 days up; the check covered peer sessions, repos, Codex and background jobs.*
+
+---
+
 ## 2026-11-17 — face instance parked
 
 A second Claude Code instance for the human-facing work, acting as a buffer against data pollution, is parked as an alternative to onboarding Codex for that role.
