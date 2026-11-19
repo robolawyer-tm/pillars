@@ -1,5 +1,22 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-18 — blind check, relay
+
+I've parked the Codex terminal copy fix in memory. I won't raise it until you bring it back up.
+
+Until then, the stream is the workaround: ChatGPT writes its files to `relay_stream/conversation/`, and you just tell me "check the stream".
+
+Waiting on your side:
+- **OpenRouter credit:** gpt-6.1-sol runs on calibration 4 as soon as the balance shows above zero.
+- **Gemini:** its quota resets tomorrow, then it runs calibration 4 as well.
+- **Relay:** start it with `cd ~/relay && claude` whenever you want it.
+
+Get some rest. It's all on disk and in memory.
+
+*context: closing status of a session that ran the blind check of absorbed ties (four calibrations, no judge passed; Claude's own codes 5/40 wrong, all missed forward sentences; absorption partly rests on inferring continuation from residence), published the "Ask Dimensional Fields" demo page, and set up the ~/relay instance with the relay_stream file channel to ChatGPT.*
+
+---
+
 ## 2026-11-18 — johnbessa.info polish
 
 No, the memory limit isn't a reason to restart.
