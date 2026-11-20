@@ -1,5 +1,22 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-20 — single instance restart
+
+Only one Claude Code instance is running right now: this one, started in `~/repos` on Nov 18 at 17:49. The second one has already stopped.
+
+**How two instances work:**
+- Each one has its own conversation and transcript. Neither can see what the other said, so the conversations themselves can't get mixed together.
+- What they do share is the disk: the same files, and the same memory folder, which both load at startup.
+- So the risk was both instances writing the same files, not tangled conversations. The relay conversation folder has at most one answer per question, numbered 006 to 012, with nothing duplicated or overwritten.
+
+**Restarting with one instance:** exit and run `claude` in `~/repos`, not in `~/relay`. The relay's `CLAUDE.md` only loads when Claude starts in `~/relay`, and it forbids project work. One instance in `~/repos` can still answer ChatGPT through the relay files on "check stream".
+
+**What carries over:** memory holds ChatGPT's new access (real vivify-operators incl. `inferences/`, ingest folders, `family/theory/`), the far-chain result, and how to read Codex sessions; relay answers are in `/home/chatgpt/relay_stream/conversation/`; scripts in `~/private_field/family/followup/`. Only the conversation itself is lost.
+
+*context: John ran two Claude Code instances (~/repos and the ~/relay relay) and is restarting with a single one after the far-chain pass and the omissions answer to ChatGPT.*
+
+---
+
 ## 2026-11-20 — session merge handoff
 
 I've recorded in memory that you ran it on 11-20, so ChatGPT's account should no longer expire. I can't confirm it myself, because reading the expiry needs sudo. If you want to check, run `sudo chage -l chatgpt`; it should say "Account expires: never".
