@@ -1,5 +1,15 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-20 — session merge handoff
+
+I've recorded in memory that you ran it on 11-20, so ChatGPT's account should no longer expire. I can't confirm it myself, because reading the expiry needs sudo. If you want to check, run `sudo chage -l chatgpt`; it should say "Account expires: never".
+
+You're set to restart with a single session.
+
+*context: closing two parallel Claude sessions into one after ChatGPT harness mirroring (notes 006-010), opening ~chatgpt to john, removing the account expiry, and Gemini failing blind-check calibration 4.*
+
+---
+
 ## 2026-11-18 — blind check, relay
 
 I've parked the Codex terminal copy fix in memory. I won't raise it until you bring it back up.
