@@ -1,5 +1,15 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-20 — judge working, maroon terminal
+
+New Claude windows will now open with a dark maroon background (`#4a1c24`) and the title "claude", so they stand apart from Codex's navy windows. Same method as Codex's launcher (OSC 11 in the launch file, before the recording starts, so it stays out of the session log). Source `~/repos/sys_adm/claude_terminal`, backed up with `backit`, deployed to `~/bin`, signed, parses. Applies to new windows only; to try it in an open window: `printf '\033]11;#4a1c24\007'`.
+
+Session also: blind check of AT2 closed as it stands (SCREEN_BLIND_ABSORBED.md); omission Layer 1 run (A2AJ holds 99-100% of CanLII's NS list from 2009, NSFC 41% for 2001-2008; publication is the big layer); Codex judge FULLY WORKING (`~chatgpt/bin/judge_runner`, test_001 + test_002 passed, USAGE.log ~1% of the weekly window per decision); Claude and Codex ran a direct note loop (018-020) to finish it; omission pipeline prototype built (`~chatgpt/relay_stream/prototype/trace/TRACE.md`, 53 rows: judgment / study / two fictional families, every line labelled); marketing master = relay copy, drafts tree in `relay_stream/marketing_output/drafts/`, note 021-022 to Codex pending.
+
+*context: closing a day that restarted from one Claude instance, set up Codex as an outside judge, and ended on a terminal colour to tell the two apart.*
+
+---
+
 ## 2026-11-20 — single instance restart
 
 Only one Claude Code instance is running right now: this one, started in `~/repos` on Nov 18 at 17:49. The second one has already stopped.
