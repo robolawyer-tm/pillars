@@ -1,5 +1,28 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-22 — pivot back to vivify
+
+LESCC hackathon session closed; pivot back to vivify (omission Layer 2 next)
+
+*context: John closed the LESCC hackathon work (PR #2 merged, #5 open, clone clean) and returned to vivify, choosing omission Layer 2 (publication rate via filing statistics) as the next task.*
+
+---
+
+## 2026-11-21 — LESCC hackathon PRs
+
+Good session. Here's where the hackathon stands:
+
+- **Merged into their repo (PR #2):** your two bid files, your longer README, and the source notes in `data/README.md`. Those notes cover the vendor count, Chinese residents and Asian households, with sources.
+- **Still open (PR #5):** the anthropology layer and its README. The organisers just need to merge it.
+- **Your clone** `~/repos/lescc-hackathon` is on `main` and matches upstream. I've also deleted the temporary `pr1` reference.
+- **Still unsourced:** the 400+ BID members, the 40 frontage owners and the 6 coffee shops, if anyone asks.
+
+I saved a short note about the hackathon to memory, so in a later session "pull the latest from upstream" will work without explanation.
+
+*context: John joined the DSSG NYC LESCC hackathon (unrelated to Vivify); we forked dssg-nyc/lescc-hackathon, contributed his team's bid files via PRs, and checked the bid's figures against NYC restaurant inspections and ACS census data.*
+
+---
+
 ## 2026-11-20 — judge working, maroon terminal
 
 New Claude windows will now open with a dark maroon background (`#4a1c24`) and the title "claude", so they stand apart from Codex's navy windows. Same method as Codex's launcher (OSC 11 in the launch file, before the recording starts, so it stays out of the session log). Source `~/repos/sys_adm/claude_terminal`, backed up with `backit`, deployed to `~/bin`, signed, parses. Applies to new windows only; to try it in an open window: `printf '\033]11;#4a1c24\007'`.
