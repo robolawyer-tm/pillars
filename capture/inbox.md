@@ -1,5 +1,13 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-22 — omission layer 2
+
+Omission work done: Layer 2 NS (1-2% of family dispositions published) and BC (2-3%), direction test checked (uncontested divorce absent, contested bin in proportion, support-over withdrawn), StatCan custom request fact sheet drafted; next = research-partner prototype with omission result
+
+*context: Session measured how much of the family-court caseload reaches publication in Nova Scotia and BC against StatCan Civil Court Survey tables, tested and then self-checked which kinds of case the published record over- and under-represents, and prepared a custom-data request.*
+
+---
+
 ## 2026-11-22 — pivot back to vivify
 
 LESCC hackathon session closed; pivot back to vivify (omission Layer 2 next)
