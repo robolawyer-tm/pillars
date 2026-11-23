@@ -1,5 +1,13 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-22 — afterward tooling built
+
+Afterward tooling built end to end on synthetic data: donor inventory round 1b (distance found in Flanders and FFCWS), FFCWS bridge map and codebook check across waves, fusion.py crosswalk/recode/ours/match/score/holdout, accuracy test 0 on five far-chain ties, Flanders crosswalk skeleton (archive down); Codex drafts 30/40 reviewed; next = FFCWS registration check
+
+*context: building the data-fusion pipeline that borrows outcomes from longitudinal family studies to fill the omitted afterward of court relocation orders, tooling before accuracy.*
+
+---
+
 ## 2026-11-22 — omission layer 2
 
 Omission work done: Layer 2 NS (1-2% of family dispositions published) and BC (2-3%), direction test checked (uncontested divorce absent, contested bin in proportion, support-over withdrawn), StatCan custom request fact sheet drafted; next = research-partner prototype with omission result
