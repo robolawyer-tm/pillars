@@ -1,5 +1,37 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-27 — licensing pivot, pairfam
+
+good we need a pivot towards licensing because I think we may be known now
+
+*context: GESIS approved pairfam/FReDA/pairfam Covid-19 access to 2028-11-25; PREREG_PAIRFAM and NLSCYA N1 were frozen, N1 held (far moves thin father contact, +32.8 points) and went into FINDINGS_MILESTONE_4.*
+
+---
+
+## 2026-11-26 — gaps in datasets
+
+Higher goal = gaps in datasets (record gaps + frame gaps: researcher POV/worldview decides what is asked); first instance = process and outcome live in different datasets, bridged only by shared metadata (bridge fields), aggregates cross never rows; key weakness = conditional independence (court adds nothing beyond bridge fields), untestable from either set alone; pairfam holds process (crn60/crn61i3 court/residence dispute) + outcome together -> validation set for that assumption; P2 to be recast as that test before freeze
+
+**Preceding response (Claude):**
+
+The setup: the process (a court trial, an order, a move) is recorded in one dataset; the outcome (contact later, a parent's pain, a child's distress) in another; no family appears in both. The only link is the metadata they share — circumstances both sides record: family side, distance, whether the parents lived together, child age. Those are the bridge fields.
+
+What travels between the datasets is aggregates, not records. For each combination of circumstances, the outcome dataset contributes a distribution (e.g. father's side + far + parents split: kept 38 / reduced 48 / stopped 13). The court side looks up its own cases in that table. That is how `fusion.py match` already works: keys family > change > side > nf, the core keys never relaxed, cells under 30 flagged thin. It also means the GESIS terms come almost for free: microdata never leaves the laptop, only cell-level numbers cross.
+
+The weak point (the field calls this statistical matching): when nothing links the two datasets, fusion has to assume the court process adds nothing to the outcome once the bridge fields are known. Put plainly: two families with the same circumstances are assumed to fare alike whether or not a judge was involved. That cannot be checked from either dataset alone, and it is exactly where the frame gaps get in. If being in court matters in itself, the filled outcome is wrong in a hidden way.
+
+Why pairfam matters: it is one of the rare datasets holding some process and outcome together — crn60/crn61i3 record court and residence-right disputes, alongside yearly contact and mood. Inside pairfam we can predict outcomes for the court families using only the non-court families matched on bridge fields, then compare with what the court families actually report. The gap between the two measures how far the assumption fails. That is what P2 was reaching for; recast this way it becomes the method's own validity test. The far-chain follow-ups (later decisions reporting a tie's state) are a second, smaller check from the court side.
+
+Your goal and its first case:
+- Overall goal: filling gaps across datasets, with each source's frame measured
+- First case: process in court records, outcomes in surveys, linked only by shared metadata, aggregates only, assumption tested wherever a dataset holds both
+
+Earlier in the same thread — two kinds of omission: (1) gaps in the record (settled/unpublished cases, the afterward); (2) gaps in the frame (never asked because the designers didn't see it as a question): SHARE asks grandchild care not contact; FFCWS closest vs most-seen grandparent can be different people; Add Health rare-contact parents answered the next wave less (56% vs 64%) — the gap is linked to the outcome; DiF grandparents only. Frame gaps show only when sources are crossed (FFCWS H4 robust vs Add Health S4 failed). "Worldview bias" is still a feeling: present it as something to measure, not a finding.
+
+*context: answering GESIS (pairfam ZA5678 + FReDA ZA7777 access) led John to restate the project goal as gaps in datasets, with the metadata bridge between process and outcome datasets as its first case.*
+
+---
+
 ## 2026-11-22 — afterward tooling built
 
 Afterward tooling built end to end on synthetic data: donor inventory round 1b (distance found in Flanders and FFCWS), FFCWS bridge map and codebook check across waves, fusion.py crosswalk/recode/ours/match/score/holdout, accuracy test 0 on five far-chain ties, Flanders crosswalk skeleton (archive down); Codex drafts 30/40 reviewed; next = FFCWS registration check
