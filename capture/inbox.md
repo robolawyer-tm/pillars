@@ -1,5 +1,13 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-27 — licensing done, backups
+
+I'm not worried about the CLA - issue here is to prevent any others from licensing our work - what is the state of the old secrets you just mentioned - my thumb drive being attached to my car keys and wallet with a chain is an unlikely leak - but is there a quick fix?
+
+*context: licensing split applied across all clean public repos (AGPL code, CC BY text, footer, JSON-LD field, CONTRIBUTING, raw_text moved private), two exposed repos made private, and backups moved toward encrypted thumb drives with a sealed secrets bundle and rebuild kit.*
+
+---
+
 ## 2026-11-27 — licensing pivot, pairfam
 
 good we need a pivot towards licensing because I think we may be known now
