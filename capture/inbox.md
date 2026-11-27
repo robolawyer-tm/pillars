@@ -1,5 +1,20 @@
 # Inbox — captured inferences and project ideas
 
+## 2026-11-27 — marketing tree, backups
+
+I committed and pushed `dell_linux_backup` and `RESTORE.md` to sys_adm (`f114ce4`). Only `site_watch`, which isn't mine, is still untracked there.
+
+**Still open:**
+- **Passwords:** a few to change (details in private memory).
+- **Thumb drives:** make the first one with `sudo make_backup_thumb`, then run `/backup`.
+- **Key copy on the drives:** the `master_key.age` plan is parked until you're on a private network. Adding a passphrase to the key itself is parked with it.
+- **LinkedIn drafts:** the 17 uncommitted drafts in the public dist_files repo are your call. Separately, record which drafts went out in `~/marketing/30_linkedin/posts/links.txt`.
+- **GESIS:** read the contract when it arrives, then run the pairfam adapter and the frozen run.
+
+*context: closing list after building the per-channel marketing tree (~/marketing, marketing_index) and adding the relay/marketing folder to the encrypted thumb-drive backups.*
+
+---
+
 ## 2026-11-27 — licensing done, backups
 
 I'm not worried about the CLA - issue here is to prevent any others from licensing our work - what is the state of the old secrets you just mentioned - my thumb drive being attached to my car keys and wallet with a chain is an unlikely leak - but is there a quick fix?
